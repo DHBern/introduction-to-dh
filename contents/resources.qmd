@@ -67,7 +67,7 @@ listing:
       date: 2026-10-27
       categories: [standard]
     - title: "Git and GitHub — course guide"
-      path: /contents/github.qmd
+      path: github.html
       description: "Our own standing reference: what Git is, three routes through it (browser only / push and pull / branches and forks), working with AI agents, how GitHub Pages works, and further reading including videos."
       date: 2026-09-29
       categories: [tutorial, essential]
@@ -155,14 +155,23 @@ things.
       list = document.getElementById("zot-results");
   var timer = null, seq = 0;
 
-  function esc(s) {
-    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
-    });
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function link(url, text, cls) {
+    var a = el("a", cls, text);
+    a.setAttribute("href", url);
+    a.setAttribute("target", "_blank");
+    a.setAttribute("rel", "noopener");
+    return a;
   }
 
   function render(items, total) {
-    list.innerHTML = "";
+    list.textContent = "";
     if (!items.length) { status.textContent = "Nothing found. Try fewer or different words."; return; }
     status.textContent = total > items.length
       ? "Showing the first " + items.length + " of " + total + " matches."
@@ -173,17 +182,23 @@ things.
       var doi = d.DOI ? "https://doi.org/" + d.DOI : (d.url || "");
       var venue = d.publicationTitle || d.proceedingsTitle || d.bookTitle || d.publisher || d.repository || "";
       var year = (m.parsedDate || d.date || "").slice(0, 4);
-      var li = document.createElement("li");
-      li.className = "zot-item";
-      li.innerHTML =
-        '<a class="zot-title" href="' + esc(href) + '" target="_blank" rel="noopener">' + esc(d.title || "(untitled)") + "</a>" +
-        '<div class="zot-meta">' +
-          (m.creatorSummary ? "<span>" + esc(m.creatorSummary) + "</span>" : "") +
-          (year ? "<span>" + esc(year) + "</span>" : "") +
-          '<span class="zot-type">' + esc(d.itemType || "") + "</span>" +
-          (venue ? "<span><em>" + esc(venue) + "</em></span>" : "") +
-        "</div>" +
-        (doi ? '<div class="zot-links"><a href="' + esc(doi) + '" target="_blank" rel="noopener">' + esc(d.DOI ? "doi.org/" + d.DOI : "source") + "</a></div>" : "");
+
+      var li = el("li", "zot-item");
+      li.appendChild(href ? link(href, d.title || "(untitled)", "zot-title")
+                          : el("span", "zot-title", d.title || "(untitled)"));
+
+      var meta = el("div", "zot-meta");
+      if (m.creatorSummary) meta.appendChild(el("span", null, m.creatorSummary));
+      if (year) meta.appendChild(el("span", null, year));
+      if (d.itemType) meta.appendChild(el("span", "zot-type", d.itemType));
+      if (venue) { var v = el("span"); v.appendChild(el("em", null, venue)); meta.appendChild(v); }
+      li.appendChild(meta);
+
+      if (doi) {
+        var wrap = el("div", "zot-links");
+        wrap.appendChild(link(doi, d.DOI ? "doi.org/" + d.DOI : "source"));
+        li.appendChild(wrap);
+      }
       list.appendChild(li);
     });
   }
@@ -203,9 +218,9 @@ things.
       .then(function (res) { if (mine === seq) render(res.items, res.total); })
       .catch(function () {
         if (mine !== seq) return;
-        list.innerHTML = "";
-        status.innerHTML = 'Could not reach the Zotero API. You can search the library directly at ' +
-          '<a href="https://www.zotero.org/groups/2386895/dh_unibe/library">zotero.org</a>.';
+        list.textContent = "";
+        status.textContent = "Could not reach the Zotero API. You can search the library directly at ";
+        status.appendChild(link("https://www.zotero.org/groups/2386895/dh_unibe/library", "zotero.org"));
       });
   }
 
