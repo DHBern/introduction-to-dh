@@ -119,6 +119,102 @@ list.
 ::: {#resources}
 :::
 
+## Search the DH UniBe Zotero group {#zotero-search}
+
+The department's shared library holds around 2,500 references. This searches it **live** — it
+queries the [Zotero API](https://www.zotero.org/support/dev/web_api/v3/start) from your browser
+as you type, so what you see is the library as it is right now. No account or login is needed to
+search; you only need [membership](https://www.zotero.org/groups/2386895/dh_unibe/) to add
+things.
+
+```{=html}
+<div class="zot-search">
+  <form class="zot-form" onsubmit="return false;">
+    <input type="search" id="zot-q" placeholder="Search by title, author or year — e.g. stochastic parrots, Sahle, OCR"
+           autocomplete="off" aria-label="Search the DH UniBe Zotero group library">
+    <select id="zot-mode" aria-label="Search scope">
+      <option value="titleCreatorYear">Title, author, year</option>
+      <option value="everything">Everything (incl. full text)</option>
+    </select>
+  </form>
+  <p class="zot-status" id="zot-status">Type at least three characters to search.</p>
+  <ol class="zot-results" id="zot-results"></ol>
+  <p class="zot-foot">
+    Results come from the public
+    <a href="https://www.zotero.org/groups/2386895/dh_unibe/">dh_unibe</a> group library.
+    Anyone may read it; members may add to it.
+  </p>
+</div>
+
+<script>
+(function () {
+  var GROUP = 2386895, API = "https://api.zotero.org/groups/" + GROUP + "/items/top";
+  var q = document.getElementById("zot-q"),
+      mode = document.getElementById("zot-mode"),
+      status = document.getElementById("zot-status"),
+      list = document.getElementById("zot-results");
+  var timer = null, seq = 0;
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function render(items, total) {
+    list.innerHTML = "";
+    if (!items.length) { status.textContent = "Nothing found. Try fewer or different words."; return; }
+    status.textContent = total > items.length
+      ? "Showing the first " + items.length + " of " + total + " matches."
+      : items.length + (items.length === 1 ? " match." : " matches.");
+    items.forEach(function (it) {
+      var d = it.data || {}, m = it.meta || {};
+      var href = (it.links && it.links.alternate && it.links.alternate.href) || "";
+      var doi = d.DOI ? "https://doi.org/" + d.DOI : (d.url || "");
+      var venue = d.publicationTitle || d.proceedingsTitle || d.bookTitle || d.publisher || d.repository || "";
+      var year = (m.parsedDate || d.date || "").slice(0, 4);
+      var li = document.createElement("li");
+      li.className = "zot-item";
+      li.innerHTML =
+        '<a class="zot-title" href="' + esc(href) + '" target="_blank" rel="noopener">' + esc(d.title || "(untitled)") + "</a>" +
+        '<div class="zot-meta">' +
+          (m.creatorSummary ? "<span>" + esc(m.creatorSummary) + "</span>" : "") +
+          (year ? "<span>" + esc(year) + "</span>" : "") +
+          '<span class="zot-type">' + esc(d.itemType || "") + "</span>" +
+          (venue ? "<span><em>" + esc(venue) + "</em></span>" : "") +
+        "</div>" +
+        (doi ? '<div class="zot-links"><a href="' + esc(doi) + '" target="_blank" rel="noopener">' + esc(d.DOI ? "doi.org/" + d.DOI : "source") + "</a></div>" : "");
+      list.appendChild(li);
+    });
+  }
+
+  function search() {
+    var term = q.value.trim();
+    if (term.length < 3) { list.innerHTML = ""; status.textContent = "Type at least three characters to search."; return; }
+    var mine = ++seq;
+    status.textContent = "Searching…";
+    var url = API + "?q=" + encodeURIComponent(term) + "&qmode=" + encodeURIComponent(mode.value) + "&limit=20&format=json";
+    fetch(url)
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        var t = parseInt(r.headers.get("Total-Results") || "0", 10);
+        return r.json().then(function (j) { return { items: j, total: t || j.length }; });
+      })
+      .then(function (res) { if (mine === seq) render(res.items, res.total); })
+      .catch(function () {
+        if (mine !== seq) return;
+        list.innerHTML = "";
+        status.innerHTML = 'Could not reach the Zotero API. You can search the library directly at ' +
+          '<a href="https://www.zotero.org/groups/2386895/dh_unibe/library">zotero.org</a>.';
+      });
+  }
+
+  q.addEventListener("input", function () { clearTimeout(timer); timer = setTimeout(search, 350); });
+  mode.addEventListener("change", search);
+})();
+</script>
+```
+
 ## Contribute
 
 Found something worth adding? Open an
