@@ -66,6 +66,11 @@ listing:
       description: "The Text Encoding Initiative Guidelines — the reference work for encoding texts in the humanities. Introduced in Session 7."
       date: 2026-10-27
       categories: [standard]
+    - title: "Git and GitHub — course guide"
+      path: /contents/github.qmd
+      description: "Our own standing reference: what Git is, three routes through it (browser only / push and pull / branches and forks), working with AI agents, how GitHub Pages works, and further reading including videos."
+      date: 2026-09-29
+      categories: [tutorial, essential]
     - title: "Programming Historian"
       path: https://programminghistorian.org/
       description: "Peer-reviewed, beginner-friendly tutorials on digital methods, in English, Spanish, French and Portuguese. The single most useful place to go after this course."

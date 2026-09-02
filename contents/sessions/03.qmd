@@ -55,6 +55,13 @@ This is the first time your bibliography is treated as a dataset. It will not be
 
 ## GitHub introduction
 
+::: {.callout-tip title="Standing reference"}
+Everything in this part of the session, and a good deal more, is written up on the
+[**Working with Git and GitHub**](/contents/github.qmd) page — including three routes through
+Git depending on how far you want to go, and a list of further introductions and videos. Come
+back to it whenever you get stuck.
+:::
+
 -   Repositories, commits, branches — the model, before the commands
 -   The web interface: creating a repository, editing files, opening an issue
 -   README, LICENSE, and why a repository without them is not a publication

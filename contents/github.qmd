@@ -1,0 +1,321 @@
+---
+title: "Working with Git and GitHub"
+date: 2026-09-02
+date-modified: last-modified
+lang: en-GB
+---
+
+A standing reference for the course. It is introduced in
+[Session 3](/contents/sessions/03.qmd), used again for GitHub Pages in
+[Session 6](/contents/sessions/06.qmd), and it is how you will publish your
+[assignment](/contents/assignment.qmd). Come back to it whenever you get stuck.
+
+::: {.callout-tip title="You can pass this course using only the website"}
+Everything below has a route that needs no command line at all. Start there. Add the harder
+techniques when you feel the easy ones getting in your way — not before.
+:::
+
+## The concept
+
+### The problem Git solves
+
+You know this failure mode:
+
+```
+thesis_final.docx
+thesis_final_v2.docx
+thesis_final_v2_REALLY_FINAL.docx
+thesis_final_v2_REALLY_FINAL_hodel_comments.docx
+thesis_final_USE_THIS_ONE.docx
+```
+
+Every one of those files is an attempt to answer a question the file system cannot answer:
+*what changed, when, why, and who did it?* Renaming files is a bad database for that. **Git** is
+a good one.
+
+### What Git actually is
+
+Git is a **version control system**: it records the history of a set of files as a sequence of
+snapshots, and lets you move between them.
+
+Three ideas carry almost everything:
+
+| Term | What it means |
+|:--|:--|
+| **Repository** ("repo") | A folder whose entire history Git is tracking. |
+| **Commit** | A snapshot of the whole folder at one moment, with a message saying *why*. The atom of Git. |
+| **Branch** | A movable pointer to a commit — a line of work you can develop without disturbing the others. |
+
+A commit is not a backup. A backup answers "what did this look like on Tuesday?"; a commit
+answers "why does this line exist?" That second question is the one that matters in research,
+and it is why the **commit message** is the most valuable thing you will type all semester.
+
+### Git is not GitHub
+
+This trips up nearly everyone, so be clear about it early:
+
+-   **Git** is the software. It runs on your own machine and works perfectly with no internet
+    connection. It was written by Linus Torvalds in 2005 for Linux kernel development.
+-   **GitHub** is a *company* (owned by Microsoft) running a *website* that hosts Git
+    repositories and adds things Git itself does not have: a web interface, issues, pull
+    requests, user accounts, and — the reason we care — free web hosting through GitHub Pages.
+
+The relationship is roughly that of *email* to *Gmail*. GitLab, Codeberg, Bitbucket and the
+University's own instances host Git too. We use GitHub because it is where the DH community
+publishes, and because Pages is free.
+
+### Why this belongs in a humanities course
+
+Not because you are becoming a software developer. Because Git gives you three things the
+humanities have always wanted and rarely had:
+
+-   **Provenance.** Every change is attributable to a person, a moment and a stated reason. That
+    is a scholarly apparatus for your data, not just for your prose.
+-   **Reversibility.** You can try something destructive to your data and undo it exactly. This
+    changes what you are willing to attempt.
+-   **Collaboration without overwriting.** Two people can work on the same edition at once and
+    reconcile the results deliberately, rather than by email attachment.
+
+::: {.callout-note title="A worked example you already have"}
+This website is a Git repository. Use **Edit this page** in the right-hand margin of any page to
+see its source and its full history — including every correction made during the semester.
+:::
+
+## Three routes through Git
+
+Pick the one that matches what you actually need this week. They are not levels of virtue;
+plenty of working researchers stay on Route 1 forever and publish perfectly good work.
+
+### Route 1 — Everything in the browser {#route-1}
+
+**For:** getting your assignment site online. Editing text. Fixing a typo. Working alone.
+**You need:** a browser and a GitHub account. Nothing installed.
+
+GitHub's website is a complete Git client. You can do the whole course this way.
+
+1.  **Make a repository.** *New repository* → give it a name → tick *Add a README* → *Create*.
+2.  **Edit a file.** Click it, click the pencil ✏️, type.
+3.  **Commit.** Scroll down, write a short message saying what you changed, click *Commit
+    changes*. **That is a commit.** You have used version control.
+4.  **Add files.** *Add file* → *Upload files*, or drag them into the browser window.
+5.  **Look at the history.** The *History* button on any file shows every version and what
+    changed between them. Click any commit to see the difference highlighted line by line.
+
+::: {.callout-tip title="github.dev — a full editor, still in the browser"}
+Press <kbd>.</kbd> (full stop) while viewing any repository on GitHub. A complete VS Code editor
+opens in your browser, on that repository, with no installation. It is the best-kept secret on
+the site, and it bridges Route 1 and Route 2.
+:::
+
+**What you give up:** you can only work online, only on one file at a time, and you cannot try
+something risky and back out locally.
+
+### Route 2 — Local edits, push and pull {#route-2}
+
+**For:** working offline, editing many files at once, running the site locally before publishing.
+**You need:** [Git installed](https://git-scm.com/downloads), plus either
+[GitHub Desktop](https://desktop.github.com/) (buttons) or a terminal (typing).
+
+The working cycle, which you will repeat several hundred times:
+
+```bash
+git clone https://github.com/USER/REPO.git   # once: copy the repo to your machine
+cd REPO
+
+# ... edit files in your editor ...
+
+git status                    # what have I changed?
+git add contents/about.qmd    # stage the changes I want to record
+git commit -m "Add workflow description to the about page"
+git push                      # send them to GitHub
+```
+
+And before you start work each time:
+
+```bash
+git pull                      # bring down anything that changed on GitHub
+```
+
+Four verbs — `add`, `commit`, `push`, `pull` — carry you a long way.
+
+::: {.callout-important title="The one rule that prevents most pain"}
+**`git pull` before you start. `git push` when you stop.** Most beginner Git disasters are two
+people, or one person on two machines, editing from different starting points. Pulling first
+makes that impossible.
+:::
+
+**Writing commit messages.** A message is written for the person reading the history in six
+months, who is you:
+
+| ✅ | ❌ |
+|:--|:--|
+| `Fix broken DOI in session 5 reading` | `update` |
+| `Add 47 items to bibliography from swisscovery` | `stuff` |
+| `Correct place names misread by OCR in ch. 3` | `asdf` |
+
+**GitHub Desktop** does all of the above with buttons and shows you a colour-coded view of your
+changes before you commit. There is no shame in it — the concepts are identical, and *seeing*
+your changes before committing is genuinely better practice than typing blind.
+
+### Route 3 — Branches, forks and merges {#route-3}
+
+**For:** experiments you might abandon; collaboration; contributing to someone else's project.
+**You need:** Route 2, plus a willingness to read error messages carefully.
+
+**Branching** — work on something without touching the working version:
+
+```bash
+git switch -c experiment-network-graph   # new branch, and switch to it
+# ... work, commit, work, commit ...
+git switch main                          # main is exactly as you left it
+```
+
+If the experiment works, **merge** it in. If it does not, delete the branch and nothing is lost.
+This is the feature that makes Git worth learning: *a safe place to be wrong*.
+
+**Forking** — your own copy of someone else's repository, under your account. This is how you
+propose a correction to a project you have no write access to, including this course website.
+
+**Pull requests** — the social heart of GitHub. "I have made these commits on my branch; please
+look at them and, if you agree, merge them into yours." A pull request shows the exact
+differences and gives a place to discuss them. It is peer review, applied to files.
+
+The full contribution loop:
+
+```bash
+# 1. Fork on the GitHub website, then:
+git clone https://github.com/YOU/THEIR-REPO.git
+cd THEIR-REPO
+git switch -c fix-typo-session-5
+# ... make the change ...
+git commit -am "Correct DOI for Beretta 2024"
+git push -u origin fix-typo-session-5
+# 2. GitHub shows a "Compare & pull request" button. Click it, describe the change, submit.
+```
+
+**Merge conflicts** — when two people change the same lines, Git refuses to guess and marks the
+spot:
+
+```
+<<<<<<< HEAD
+Sahle argues that Digital Humanities does not exist.
+=======
+Sahle argues that DH is not a discipline.
+>>>>>>> feature-branch
+```
+
+This is not an error and nothing is broken. Git is asking a question only a human can answer.
+Delete the markers, keep the text you want, commit. Your first conflict is alarming; your fifth
+is routine.
+
+::: {.callout-tip title="Undo almost anything"}
+Committed work is very hard to lose. `git reflog` lists every state your repository has been in,
+including ones you thought you destroyed, and `git reset --hard <hash>` returns you to any of
+them. The corollary: **commit early and often**, because Git can only protect what you have
+committed.
+:::
+
+## Working with AI agents
+
+Coding assistants are now part of how most people write Git commands, and you may use them in
+this course — the [assignment](/contents/assignment.qmd) asks you to *document* that use, not to
+avoid it.
+
+Practically, they arrive in your editor: **[GitHub Copilot](https://github.com/features/copilot)**,
+OpenAI's **Codex**, **[Claude Code](https://claude.com/claude-code)** and similar tools run
+inside [VSCodium](https://vscodium.com/) or VS Code, and agentic modes will edit files, stage
+them, write the commit message and open a pull request on your behalf. For Git specifically they
+are genuinely good: the commands are well documented, heavily represented in training data, and
+the failure modes are recoverable.
+
+Two cautions, both specific to version control:
+
+-   **A generated commit message describes the diff, not the reason.** An agent can see that you
+    changed three lines; it cannot know you changed them because the OCR misread a place name.
+    The *why* is the part worth recording, and it has to come from you.
+-   **Never let an agent run a destructive command you do not understand.** `git reset --hard`,
+    `git push --force` and `git clean -fd` discard work irreversibly. If you are asked to approve
+    one of these and cannot say what it does, don't.
+
+And the general rule from [Session 12](/contents/sessions/12.qmd): if verifying the output costs
+more than doing the work, the agent has not helped you.
+
+## How GitHub Pages works
+
+**GitHub Pages turns a repository into a website, free, on a public URL.** It is how this site is
+published, and how you will publish your assignment.
+
+### The idea
+
+Pages is a **static** host. It serves files — HTML, CSS, images — exactly as they are. There is
+no database and no server-side code, which is precisely why it is a good scholarly publishing
+platform: a static site has almost nothing to break, costs nothing to run, and can be archived
+by copying a folder.
+
+### Turning it on
+
+1.  In your repository: **Settings → Pages**
+2.  Under *Source*, choose **Deploy from a branch**, pick `main` and `/ (root)`
+3.  Wait a minute or two
+4.  Your site appears at **`https://USERNAME.github.io/REPOSITORY/`**
+
+Put an `index.html` — or an `index.md`, which Pages converts for you — at the top of the
+repository and it becomes the front page.
+
+### The two ways a site gets built
+
+| | **Deploy from a branch** | **GitHub Actions** |
+|:--|:--|:--|
+| What is published | the files sitting in your repository | the output of a build that runs on GitHub |
+| You commit | the finished HTML, or Markdown for Jekyll | only the *sources* |
+| Good for | a simple site, your assignment | Quarto, and anything with a build step |
+
+This site uses the second. The repository holds `.qmd` sources; every push triggers a workflow
+that installs Quarto, renders the site, checks for dead links and publishes the result. You can
+watch it happen under the **Actions** tab of
+[the repository](https://github.com/DHBern/introduction-to-dh/).
+
+### Things that will confuse you at least once
+
+-   **The URL has your repository name in it.** `username.github.io/my-project/`, not
+    `username.github.io/`. This breaks links written as `/style.css` — use relative paths
+    (`style.css`) or Quarto's own link syntax.
+-   **It is not instant.** A push takes a minute or two to appear. If nothing changes, hard-reload
+    (<kbd>Ctrl/Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>) before you start debugging.
+-   **Everything is public**, including the whole history. A private file committed once and
+    deleted later is still in the history and still readable. Never commit passwords, API keys or
+    material you do not have the rights to publish. See the note on API keys in the
+    [DH Lab's API session](https://dhbern.github.io/dh-lab/contents/sessions/06.html).
+-   **A repository can be private while its Pages site is public** — normal for a course project.
+
+## Where to go next
+
+### Written introductions
+
+-   **[Programming Historian: *Building a static website with Jekyll and GitHub Pages*](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages)** — written for humanists, assumes nothing, and gets you to a published site. The single best starting point after this page.
+-   **[GitHub Docs: Quickstart](https://docs.github.com/en/get-started/quickstart)** — the official introduction; short, and Route 1 throughout.
+-   **[GitHub Skills](https://skills.github.com/)** — free interactive courses that run *inside* a repository. *Introduction to GitHub* takes about 30 minutes and teaches branches and pull requests by doing them.
+-   **[Pro Git](https://git-scm.com/book/en/v2)** (Chacon & Straub) — the free, complete reference book. Chapters 1–3 cover everything in Route 2 and most of Route 3.
+-   **[Oh Shit, Git!?!](https://ohshitgit.com/)** — plain-language recipes for getting out of trouble. ([Polite version](https://dangitgit.com/) for citing in coursework.)
+-   **[Learn Git Branching](https://learngitbranching.js.org/)** — a visual, browser-based game. The fastest way to actually *understand* branching and merging.
+-   **[The Turing Way: Version Control](https://book.the-turing-way.org/reproducible-research/vcs)** — why version control is a research-integrity issue, not just a tooling choice.
+-   **[Software Carpentry: Version Control with Git](https://swcarpentry.github.io/git-novice/)** — the standard research-software-engineering lesson, designed for a half-day workshop.
+
+### Videos
+
+-   **[Git and GitHub for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)** — Daniel Shiffman, 12 short episodes. Explicitly written for people who are not programmers, and the reason many humanists finally understood Git. **Start here.**
+-   **[Git Tutorial for Beginners](https://www.youtube.com/watch?v=8JJ101D3knE)** — Programming with Mosh, ~1 hour, a single clear pass over the fundamentals.
+-   **[Git for Professionals](https://www.youtube.com/watch?v=Uszj_k0DGsg)** — freeCodeCamp / Tobias Günther, ~2.5 hours. Deeper: branching strategies, interactive rebase, reflog. For Route 3.
+-   **[GitHub Pages tutorial](https://www.youtube.com/watch?v=QyFcl_Fba-k)** — publishing a site from a repository, end to end, in about 20 minutes.
+
+### Reference
+
+-   **[Git cheat sheet (PDF, GitHub)](https://education.github.com/git-cheat-sheet-education.pdf)** — one page; print it and keep it next to your keyboard.
+-   **[GitHub Student Developer Pack](https://education.github.com/pack)** — free with your `@unibe.ch` address; includes Copilot Pro and a good deal of hosting credit.
+-   **[Quarto: Publishing to GitHub Pages](https://quarto.org/docs/publishing/github-pages.html)** — if you build your assignment site the way this one is built.
+
+::: {.callout-note title="Something missing?"}
+If a link here is dead, or you found a better introduction, open an
+[issue](https://github.com/DHBern/introduction-to-dh/issues/new/choose) or a pull request —
+which is itself a good way to practise Route 3.
+:::

@@ -35,7 +35,8 @@ Guidance:
 
 ### 2. A website about your bibliography
 
-Publish a small website — GitHub Pages is introduced in Session 6 and is the expected route —
+Publish a small website — GitHub Pages is introduced in Session 6, written up in the
+[Git and GitHub guide](/contents/github.qmd), and is the expected route —
 that presents the bibliography and, more importantly, **your reading of it**. It should contain:
 
 -   **Structure.** How you have organised the bibliography, and why that organisation and not

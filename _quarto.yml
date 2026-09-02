@@ -31,6 +31,8 @@ website:
         text: Syllabus
       - href: contents/assignment.qmd
         text: Assignment
+      - href: contents/github.qmd
+        text: GitHub
       - href: contents/resources.qmd
         text: Resources
       - href: contents/blog.qmd
@@ -49,6 +51,7 @@ website:
       - href: contents/syllabus.qmd
         contents: contents/sessions/*
       - href: contents/assignment.qmd
+      - href: contents/github.qmd
       - href: contents/resources.qmd
       - section: Student Projects
         href: contents/blog.qmd

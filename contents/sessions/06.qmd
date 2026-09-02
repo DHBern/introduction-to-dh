@@ -38,7 +38,9 @@ can see, sort, search and download is a claim about what matters in your data.
 ## GitHub Pages
 
 The practical core of the session, and the route to your
-[assignment](/contents/assignment.qmd) website:
+[assignment](/contents/assignment.qmd) website. The
+[**Git and GitHub guide**](/contents/github.qmd#how-github-pages-works) has the whole of this
+written out, including the two ways a Pages site gets built and the mistakes everyone makes once.
 
 -   Publishing a repository as a website
 -   Markdown as source, HTML as output
