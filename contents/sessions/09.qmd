@@ -1,0 +1,63 @@
+---
+title: "Session 9"
+subtitle: "Data analysis: text corpora"
+author:
+  - name: Tobias Hodel
+    orcid: 0000-0002-2071-6407
+    email: tobias.hodel@unibe.ch
+    affiliations:
+      - Walter Benjamin Kolleg / Digital Humanities, University of Bern
+    role: author
+date: 2026-11-10
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-hodel}
+[Hodel]{.teach .teach-hodel} Taught by **Tobias Hodel**.
+:::
+
+## In this session
+
+-   Discussion of [@underwood2014] — search as an unexamined research practice
+-   Building a **text corpus** from the articles in your Zotero library
+-   **Hands-on: [Voyant Tools](https://voyant-tools.org/)**
+
+## From library to corpus
+
+Your Zotero library holds PDFs. A corpus is something else: a deliberately bounded, documented
+set of texts, in a form a machine can read.
+
+-   What makes a corpus a corpus — boundaries, and a statement of what is in and what is out
+-   Getting plain text out of PDFs, and what the extraction destroys
+-   Cleaning: headers, footnotes, hyphenation, running heads, OCR noise
+-   Documenting the corpus, so that someone else could rebuild it
+
+## Distant reading, examined
+
+Underwood's argument is that the practices we consider neutral — searching, sorting, filtering —
+are already interpretive, and that we adopted them without theorising them.
+
+-   What does a keyword search assume about the relation of words to concepts?
+-   What does a word-frequency list actually tell you?
+-   When is "distant reading" a method, and when is it a rhetoric?
+
+## Hands-on: Voyant Tools
+
+1.  Upload your corpus
+2.  Cirrus, Trends, Contexts, Correlations — what each panel actually computes
+3.  Stopwords: build your own list, and notice how much the results move
+4.  Compare two sub-corpora — by decade, by language, by sub-topic
+5.  Export a visualisation and a link for your project site
+
+Then the hard question, in plenary: **did any of this change what you think about your
+material?** Negative answers are results too.
+
+::: {.callout-tip title="In parallel in the Lab"}
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/09.html) moves the same kind of
+analysis into notebooks (Colab / Noto) with topic modelling.
+:::
+
+## Reading for Session 10
+
+To be announced.

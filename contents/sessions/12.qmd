@@ -1,0 +1,64 @@
+---
+title: "Session 12"
+subtitle: "LLMs: stochastic parrots and research agents"
+author:
+  - name: Tobias Hodel
+    orcid: 0000-0002-2071-6407
+    email: tobias.hodel@unibe.ch
+    affiliations:
+      - Walter Benjamin Kolleg / Digital Humanities, University of Bern
+    role: author
+date: 2026-12-01
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-hodel}
+[Hodel]{.teach .teach-hodel} Taught by **Tobias Hodel**.
+:::
+
+## In this session
+
+-   How large language models work, without the mathematics
+-   **Research agents**: what an LLM with tools can and cannot do
+-   Preparing the discussion of [@bender2021] for next week
+
+## How LLMs work
+
+-   Tokens, context, and next-token prediction
+-   Pretraining, fine-tuning, instruction tuning, RLHF — four different things
+-   Why fluency and accuracy are unrelated properties
+-   Hallucination as a structural feature, not a bug to be patched
+-   Context windows, retrieval, and why "just give it the documents" is harder than it sounds
+
+## Research agents
+
+An agent is a model given tools and a loop. What that actually buys you:
+
+-   Search, retrieval, code execution, API calls
+-   Where agents genuinely help in a research workflow: boilerplate, format conversion, first
+    passes over large material, code you can check
+-   Where they fail: anything requiring that a claim be *true*, judgement about sources,
+    anything you cannot verify
+-   **Verification is the whole job.** If checking the output costs more than doing the work,
+    the agent has not helped.
+-   Documentation and reproducibility: a prompt is a method, and undocumented methods are not
+    research
+
+## Ahead of next week: stochastic parrots
+
+Bender et al. argue that scale itself is the problem — environmental cost, unauditable training
+data, concentration of power, and the illusion of understanding. Read it against your own use
+of these tools this semester, including in the [assignment](/contents/assignment.qmd).
+
+::: {.callout-tip title="In parallel in the Lab"}
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/12.html) works hands-on with
+multimodal LLMs on humanities material.
+:::
+
+## Reading for Session 13
+
+Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell. 2021. "On
+the Dangers of Stochastic Parrots: Can Language Models Be Too Big?" In *Proceedings of the 2021
+ACM Conference on Fairness, Accountability, and Transparency*, 610–23.
+<https://doi.org/10.1145/3442188.3445922>

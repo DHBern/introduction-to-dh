@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: 'Introduction to Digital Humanities — Course Website'
+message: >-
+  If you use these teaching materials, please cite them using the metadata from this file.
+type: dataset
+authors:
+  - given-names: Tobias
+    family-names: Hodel
+    email: tobias.hodel@unibe.ch
+    affiliation: University of Bern
+    orcid: 'https://orcid.org/0000-0002-2071-6407'
+  - given-names: Elena
+    family-names: Spadini
+    orcid: 'https://orcid.org/0000-0002-4522-2833'
+  - given-names: Francesco
+    family-names: Beretta
+    orcid: 'https://orcid.org/0000-0002-4389-4126'
+repository-code: 'https://github.com/DHBern/introduction-to-dh/'
+url: 'https://dhbern.github.io/introduction-to-dh/'
+abstract: >-
+  Course website and syllabus for "Introduction to Digital Humanities", an annual course taught
+  in the autumn semester at the University of Bern (Walter Benjamin Kolleg / Digital
+  Humanities). The course is compulsory for students of the MA Major and MA Minor in Digital
+  Humanities and open to students from other humanities programmes. Over fourteen sessions it
+  follows the chain from source to published data: definitions of the field, data and metadata,
+  conceptual data modelling, Linked Open Data, data publication on the web, scholarly digital
+  editions, and the analysis of networks, text corpora and geodata, closing with machine
+  learning, large language models, data feminism and the FAIR and CARE principles. The course
+  runs in parallel with the hands-on DH Lab.
+keywords:
+  - Digital Humanities
+  - Teaching
+  - Data Modelling
+  - Linked Open Data
+  - Syllabus
+license: CC-BY-SA-4.0
+version: 0.1.0
+date-released: '2026-09-02'

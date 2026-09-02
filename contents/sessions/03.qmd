@@ -1,0 +1,71 @@
+---
+title: "Session 3"
+subtitle: "What is data? Forms of data and metadata"
+author:
+  - name: Tobias Hodel
+    orcid: 0000-0002-2071-6407
+    email: tobias.hodel@unibe.ch
+    affiliations:
+      - Walter Benjamin Kolleg / Digital Humanities, University of Bern
+    role: author
+date: 2026-09-29
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-hodel}
+[Hodel]{.teach .teach-hodel} Taught by **Tobias Hodel**.
+:::
+
+## In this session
+
+-   **Forms of data** in the humanities, following Schöch
+-   **Metadata**, following Pomerantz
+-   Explaining metadata concretely, through your own Zotero library
+-   **GitHub introduction** (approx. 45 minutes)
+
+## Forms of data (Schöch)
+
+Schöch's four adjectives — *big*, *smart*, *clean*, *messy* — are a useful grid:
+
+-   Humanities data is usually **smart and small**, or **big and messy**, rarely both big and
+    smart.
+-   What does it cost to clean data, and what is destroyed in the cleaning?
+-   Which of your own materials sit where in the grid?
+
+## Metadata (Pomerantz)
+
+-   Descriptive, structural, administrative, preservation and use metadata
+-   Metadata as a *statement about a resource* — and therefore always someone's statement
+-   Controlled vocabularies and authority files: why "Bern" is not a sufficient answer
+-   Standards as social agreements, not technical ones
+
+## Exercise: metadata in your own Zotero library
+
+Open your library from last week and look at it as data:
+
+1.  Pick five records. Which fields are filled, which are empty, which are wrong?
+2.  Where did each record come from — the connector, a DOI lookup, manual entry? Does the
+    provenance show in the quality?
+3.  Export a small collection as CSV or BibTeX and look at the raw file. What does the export
+    keep, and what does it quietly drop?
+4.  Which of Pomerantz's metadata types are present in a Zotero record, and which are missing?
+
+This is the first time your bibliography is treated as a dataset. It will not be the last.
+
+## GitHub introduction
+
+-   Repositories, commits, branches — the model, before the commands
+-   The web interface: creating a repository, editing files, opening an issue
+-   README, LICENSE, and why a repository without them is not a publication
+-   How this connects to the Lab, where you meet Git on the command line
+
+::: {.callout-tip title="In parallel in the Lab"}
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/03.html) covers Markdown,
+Obsidian, GitHub and VSCodium the same week. If you take both courses, do them in that order.
+:::
+
+## Reading for Session 4
+
+Flanders, Julia, and Fotis Jannidis. 2018. "Data modeling in a digital humanities context: An
+introduction." In *The Shape of Data in Digital Humanities*. Routledge.

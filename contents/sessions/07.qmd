@@ -1,0 +1,53 @@
+---
+title: "Session 7"
+subtitle: "Data modelling: editions"
+author:
+  - name: Elena Spadini
+    orcid: 0000-0002-4522-2833
+    role: author
+date: 2026-10-27
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-spadini}
+[Spadini]{.teach .teach-spadini} Taught by **Elena Spadini**.
+:::
+
+## In this session
+
+-   **What is scholarly editing?**
+-   Discussion of [@sahle2017]
+-   **TEI**: the Text Encoding Initiative as a data model for text
+
+## What is scholarly editing?
+
+-   The edition as a *representation* of a work, not a copy of it
+-   Diplomatic, critical, genetic, documentary — what each foregrounds
+-   Sahle's wheel: text as document, as visual object, as linguistic sign, as work, as version
+-   What "digital" changes: not the medium, but what the edition can be *for*
+
+## TEI
+
+-   TEI as a customisable XML vocabulary and as a community
+-   The header: an edition's metadata is part of the edition
+-   Core encoding: structure, persons, places, dates, editorial intervention
+-   `<choice>`, `<orig>`, `<reg>`, `<del>`, `<add>` — encoding uncertainty and change
+-   Customisation with ODD, and why every project ends up with its own subset
+
+## Connecting back
+
+Look at the models you built in [Session 4](/contents/sessions/04.qmd). TEI is a data model too
+— it just happens to be embedded in the text rather than held alongside it. What does that
+placement make easy, and what does it make hard?
+
+::: {.callout-tip title="In parallel in the Lab"}
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/07.html) does TEI hands-on the
+same week, as a form of data publication.
+:::
+
+## Reading for Session 8
+
+Weingart, Scott. 2011. "Demystifying Networks, Parts I & II." *Journal of Digital Humanities* 1
+(1).
+<http://journalofdigitalhumanities.org/1-1/demystifying-networks-by-scott-weingart/>

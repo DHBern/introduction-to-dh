@@ -1,0 +1,67 @@
+---
+title: "Session 1"
+subtitle: "Welcome · What is DH: a bird's-eye view"
+author:
+  - name: Tobias Hodel
+    orcid: 0000-0002-2071-6407
+    email: tobias.hodel@unibe.ch
+    affiliations:
+      - Walter Benjamin Kolleg / Digital Humanities, University of Bern
+    role: author
+  - name: Elena Spadini
+    orcid: 0000-0002-4522-2833
+    role: author
+  - name: Francesco Beretta
+    orcid: 0000-0002-4389-4126
+    role: author
+date: 2026-09-15
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-team}
+[Course team]{.teach .teach-team} Taught by the course team: Tobias Hodel, Elena Spadini and Francesco Beretta.
+:::
+
+## In this session
+
+-   Welcome, and practical information about the course and the semester
+-   **What is DH: a bird's-eye view** — a first pass over the field: where it came from, what
+    it claims to be, and why nobody agrees
+-   How the Intro and the [DH Lab](https://dhbern.github.io/dh-lab/) fit together
+-   The [assignment](/contents/assignment.qmd) and what it will ask of you
+
+## What is DH? A first orientation
+
+The session sketches the field from above before we go into any of it in detail:
+
+-   **Origins.** Roberto Busa and the *Index Thomisticus*; "humanities computing" as a service
+    discipline; the shift to "Digital Humanities" and what that renaming did.
+-   **The three-way split.** DH as *tool use*, DH as *object of study* (the digital as a
+    cultural phenomenon), DH as *its own discipline* with its own theory. Sahle's article for
+    next week takes this apart.
+-   **Where it sits institutionally.** Centres, infrastructures, journals, funding — and how
+    that shapes what counts as DH.
+-   **What it looks like in Bern.** The MA Major and Minor, the projects around the Walter
+    Benjamin Kolleg, and what you can do with them.
+
+## Practical information
+
+-   Tuesdays 10:00–12:00, Unitobler, Lerchenweg 36, F-112
+-   Course materials and scans: [ILIAS course
+    space](https://ilias.unibe.ch/ilias.php?baseClass=ilrepositorygui&cmdNode=yv:ng&cmdClass=ilObjCourseGUI&ref_id=3733960)
+-   These pages are the syllabus. They change during the semester; the
+    [repository](https://github.com/DHBern/introduction-to-dh/) has the history.
+
+## Reading for Session 2
+
+Sahle, Patrick. 2015. "Digital Humanities? Gibt's doch gar nicht!" *Zeitschrift für digitale
+Geisteswissenschaften*, Sonderband 1. <http://www.zfdg.de/sb001_004>
+
+Read it with one question in mind: **what does Sahle gain by arguing that DH does not exist?**
+Come with a position, not a summary.
+
+## Task
+
+Sign up for **[Zotero](https://www.zotero.org/)** and install the browser connector. We start
+using it next week.

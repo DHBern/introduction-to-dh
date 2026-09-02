@@ -1,0 +1,67 @@
+---
+title: "Session 8"
+subtitle: "Data analysis: networks"
+author:
+  - name: Tobias Hodel
+    orcid: 0000-0002-2071-6407
+    email: tobias.hodel@unibe.ch
+    affiliations:
+      - Walter Benjamin Kolleg / Digital Humanities, University of Bern
+    role: author
+date: 2026-11-03
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-hodel}
+[Hodel]{.teach .teach-hodel} Taught by **Tobias Hodel**.
+:::
+
+## In this session
+
+-   Discussion of [@weingart2011]
+-   Network concepts for humanists
+-   **Hands-on: [Gephi Lite](https://lite.gephi.org/)** with the CSV from
+    [Session 5](/contents/sessions/05.qmd)
+
+## Networks, demystified
+
+Weingart's warning is the frame for the session: network analysis is not a way of *looking* at
+your material, it is a way of *transforming* it, and the transformation is lossy.
+
+-   Nodes and edges — and the violence of deciding what counts as which
+-   Directed and undirected, weighted and unweighted
+-   Bipartite (two-mode) networks, and why humanities data is so often bipartite
+-   Degree, centrality, components, communities — what each measures, and what each does not
+-   The most common error: reading a layout as if it were a map
+
+## Hands-on: Gephi Lite
+
+Bring the **CSV you produced with Wikidata in [Session
+5](/contents/sessions/05.qmd)**. If it is missing or broken, rebuild it — that is part of the
+lesson.
+
+1.  Import the CSV as a node list and an edge list
+2.  Apply a layout, and then apply a different one; compare
+3.  Compute degree and one centrality measure
+4.  Run community detection and ask whether the communities mean anything
+5.  Export the graph and a figure for your project site
+
+An extended worked example of analysing a bibliography as a network:
+<https://github.com/RISE-UNIBAS/networks_gephi>
+
+::: {.callout-note title="Your own bibliography as a network"}
+Your Zotero library is already a network: authors, co-authorship, shared keywords, citation.
+This is one of the most direct routes from the [assignment](/contents/assignment.qmd) to an
+actual analysis.
+:::
+
+::: {.callout-tip title="In parallel in the Lab"}
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/08.html) introduces Omeka and
+compares it with GitHub Pages as a publication route.
+:::
+
+## Reading for Session 9
+
+Underwood, Ted. 2014. "Theorizing Research Practices We Forgot to Theorize Twenty Years Ago."
+*Representations* 127 (1): 64–72. <https://doi.org/10.1525/rep.2014.127.1.64>

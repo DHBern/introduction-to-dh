@@ -1,0 +1,85 @@
+---
+title: "Session 14"
+subtitle: "FAIR, CARE and digital sustainability"
+author:
+  - name: Tobias Hodel
+    orcid: 0000-0002-2071-6407
+    email: tobias.hodel@unibe.ch
+    affiliations:
+      - Walter Benjamin Kolleg / Digital Humanities, University of Bern
+    role: author
+  - name: Elena Spadini
+    orcid: 0000-0002-4522-2833
+    role: author
+  - name: Francesco Beretta
+    orcid: 0000-0002-4389-4126
+    role: author
+date: 2026-12-15
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-team}
+[Course team]{.teach .teach-team} Taught by the course team: Tobias Hodel, Elena Spadini and Francesco Beretta.
+:::
+
+## In this session
+
+-   The **FAIR** principles
+-   The **CARE** principles, and the tension between them and FAIR
+-   **Digital sustainability**: what happens to a project after the funding ends
+-   Closing the semester
+
+## FAIR
+
+[@wilkinson2016] — principles for data, addressed as much to machines as to people:
+
+-   **Findable** — persistent identifiers, rich metadata, indexed in a searchable resource
+-   **Accessible** — retrievable by their identifier, with metadata that survives the data
+-   **Interoperable** — formal, shared, broadly applicable vocabularies
+-   **Reusable** — richly described, with a clear licence and clear provenance
+
+Note what FAIR does *not* say: it does not say "open". Data can be FAIR and closed.
+
+## CARE
+
+[@carroll2020] — principles for Indigenous data governance, formulated because FAIR is silent
+on power:
+
+-   **Collective benefit**
+-   **Authority to control**
+-   **Responsibility**
+-   **Ethics**
+
+The productive friction: FAIR pushes towards maximum circulation, CARE asks who gets to decide
+about circulation. Both are needed, and they do not always agree. This applies well beyond
+Indigenous data — to any material about people who did not consent to being data.
+
+## Digital sustainability
+
+-   The lifespan of a DH project versus the lifespan of its funding
+-   Repositories and persistent identifiers: Zenodo, DOIs, institutional repositories
+-   Formats: open, plain, documented — and why your database is a liability
+-   Documentation as the actual preservation strategy
+-   Licensing: for data, for code, for text — three different decisions
+-   Exit planning from day one: what will still exist in ten years, and in what form?
+
+## Applying it to your own work
+
+Take your [project site](/contents/assignment.qmd) and audit it:
+
+-   Is it findable? Does it have an identifier that is not a GitHub URL?
+-   Is the data separable from the presentation?
+-   Is there a licence? Is there a README that explains the provenance?
+-   If you stopped working on it tomorrow, what would someone else be able to do with it?
+
+## Closing
+
+-   Where to go next in the MA programmes
+-   Projects, colloquia and infrastructure at DH Bern
+-   Final questions on the assignment
+
+::: {.callout-tip title="In parallel in the Lab"}
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/14.html) hosts the final-year
+presentations for Master Minor and Master Major students.
+:::

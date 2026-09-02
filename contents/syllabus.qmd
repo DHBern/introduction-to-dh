@@ -1,0 +1,228 @@
+---
+title: "Syllabus"
+lang: en-GB
+date: 2026-09-02
+date-modified: last-modified
+nocite: |
+  @*
+link-citations: false
+citations-hover: false
+csl: chicago-fullnote-syllabus.csl
+---
+
+
+Fourteen sessions, Tuesdays 10:00–12:00, Unitobler F-112.
+
+::: {.callout-important title="How the readings work"}
+The reading listed under a session is the reading **you prepare for the following week**. It is
+introduced at the end of one session and discussed at the beginning of the next. So the Sahle
+text listed under Session 1 is discussed in Session 2, and so on.
+
+Openly available texts are linked directly. Everything else — **scans in particular** — is in
+the [ILIAS course
+space](https://ilias.unibe.ch/ilias.php?baseClass=ilrepositorygui&cmdNode=yv:ng&cmdClass=ilObjCourseGUI&ref_id=3733960).
+:::
+
+## Who teaches what
+
+::: {.teach-legend}
+[Hodel]{.teach .teach-hodel} Tobias Hodel
+[Spadini]{.teach .teach-spadini} Elena Spadini
+[Beretta]{.teach .teach-beretta} Francesco Beretta
+[Hart]{.teach .teach-hart} Stephen Hart
+[Demleitner]{.teach .teach-demleitner} Adrian Demleitner
+[Prada Ziegler]{.teach .teach-prada} Ismail Prada Ziegler
+[Course team]{.teach .teach-team} all three convenors
+:::
+
+Badges below mark who leads each session.
+
+## Sessions
+
+### [Session 1](/contents/sessions/01.qmd) (15 September 2026)
+
+**Welcome and information · What is DH: a bird's-eye view** [Course team]{.teach .teach-team}
+
+Reading for next week:
+
+-   [@sahle2015]
+
+Task:
+
+-   Sign up for [Zotero](https://www.zotero.org/)
+
+DH Lab in parallel: [Programme information, introductions, individual
+consultations](https://dhbern.github.io/dh-lab/contents/sessions/01.html)
+
+### [Session 2](/contents/sessions/02.qmd) (22 September 2026)
+
+**What is DH? Discussion of Sahle · What is data? Working with an LLM agent · Zotero introduction** [Hodel]{.teach .teach-hodel}
+
+Reading for next week:
+
+-   [@schoech2013]
+-   [@pomerantz2015] (Introduction and chapter 1)
+
+Task:
+
+-   Sign up for [GitHub](https://github.com/)
+
+DH Lab in parallel: [Get to know your computer — CLI, paths,
+storage](https://dhbern.github.io/dh-lab/contents/sessions/02.html)
+
+### [Session 3](/contents/sessions/03.qmd) (29 September 2026)
+
+**What is data? Forms of data and metadata · GitHub introduction** [Hodel]{.teach .teach-hodel}
+
+Reading for next week:
+
+-   [@flanders2018]
+
+DH Lab in parallel: [Markdown, Obsidian, GitHub,
+VSCodium](https://dhbern.github.io/dh-lab/contents/sessions/03.html)
+
+### [Session 4](/contents/sessions/04.qmd) (6 October 2026)
+
+**Data structures: conceptual modelling, relational and graph models, Dublin Core and METS** [Beretta]{.teach .teach-beretta}
+
+Reading for next week:
+
+-   [@beretta2024]
+
+DH Lab in parallel: [Replacing Excel with
+SQLite](https://dhbern.github.io/dh-lab/contents/sessions/04.html)
+
+### [Session 5](/contents/sessions/05.qmd) (13 October 2026)
+
+**Data modelling: Linked Open Data · RDF, ontologies and Wikidata** [Beretta]{.teach .teach-beretta}
+
+Reading for next week:
+
+-   [@berners-lee1992] — on the history of the web and hypertext
+-   [@bleier2018] (Introduction) — on digital editions as interfaces
+
+DH Lab in parallel: [From LOD to RiC-O, LRM and
+CIDOC-CRM](https://dhbern.github.io/dh-lab/contents/sessions/05.html)
+
+### [Session 6](/contents/sessions/06.qmd) (20 October 2026)
+
+**Data publication: the web as interface · HTML, CSS and XML · GitHub Pages introduction** [Hodel]{.teach .teach-hodel}
+
+Reading for next week:
+
+-   [@sahle2017]
+
+DH Lab in parallel: [Introduction to
+APIs](https://dhbern.github.io/dh-lab/contents/sessions/06.html)
+
+### [Session 7](/contents/sessions/07.qmd) (27 October 2026)
+
+**Data modelling: editions · What is scholarly editing? · TEI** [Spadini]{.teach .teach-spadini}
+
+Reading for next week:
+
+-   [@weingart2011]
+
+DH Lab in parallel: [Scholarly editing as a form of data publication
+(TEI)](https://dhbern.github.io/dh-lab/contents/sessions/07.html)
+
+### [Session 8](/contents/sessions/08.qmd) (3 November 2026)
+
+**Data analysis: networks · Gephi Lite, using the CSV produced in Session 5** [Hodel]{.teach .teach-hodel}
+
+Reading for next week:
+
+-   [@underwood2014]
+
+DH Lab in parallel: [Introduction to
+Omeka](https://dhbern.github.io/dh-lab/contents/sessions/08.html)
+
+### [Session 9](/contents/sessions/09.qmd) (10 November 2026)
+
+**Data analysis: text corpora · Voyant Tools, using the corpus from your Zotero library** [Hodel]{.teach .teach-hodel}
+
+Reading for next week:
+
+-   To be announced
+
+DH Lab in parallel: [Introduction to Colab /
+Noto](https://dhbern.github.io/dh-lab/contents/sessions/09.html)
+
+### [Session 10](/contents/sessions/10.qmd) (17 November 2026)
+
+**Data analysis: geovisualisation · DARIAH Geo-Browser and Palladio** [Hodel]{.teach .teach-hodel}
+
+Reading for next week:
+
+-   An introduction to machine learning (to be announced)
+
+DH Lab in parallel: [Data cleaning and connecting: OpenRefine and
+reconciliation](https://dhbern.github.io/dh-lab/contents/sessions/10.html)
+
+### [Session 11](/contents/sessions/11.qmd) (24 November 2026)
+
+**From algorithms to machine learning · Introduction to machine learning and bias** [Hodel]{.teach .teach-hodel}
+
+Reading for next week:
+
+-   [@lang2026]
+
+DH Lab in parallel: [Text recognition: introduction to
+eScriptorium](https://dhbern.github.io/dh-lab/contents/sessions/11.html)
+
+### [Session 12](/contents/sessions/12.qmd) (1 December 2026)
+
+**LLMs: stochastic parrots and research agents** [Hodel]{.teach .teach-hodel}
+
+Reading for next week:
+
+-   [@bender2021]
+
+DH Lab in parallel: [GenAI in action: multimodal LLMs in the
+humanities](https://dhbern.github.io/dh-lab/contents/sessions/12.html)
+
+### [Session 13](/contents/sessions/13.qmd) (8 December 2026)
+
+**Data feminism · Reviewing the semester from an intersectional perspective** [Hodel]{.teach .teach-hodel}
+
+Further reading:
+
+-   [@dignazio2020]
+
+DH Lab in parallel: [Workflow
+presentations](https://dhbern.github.io/dh-lab/contents/sessions/13.html)
+
+### [Session 14](/contents/sessions/14.qmd) (15 December 2026)
+
+**FAIR, CARE and digital sustainability** [Course team]{.teach .teach-team}
+
+Further reading:
+
+-   [@wilkinson2016]
+-   [@carroll2020]
+
+DH Lab in parallel: [Final-year presentations, Master Minor and Master
+Major](https://dhbern.github.io/dh-lab/contents/sessions/14.html)
+
+## Assessment
+
+See the [Assignment](/contents/assignment.qmd) page for the full brief, the criteria and the
+deadlines.
+
+## Literature
+
+::: callout-tip
+## Note on copyright
+
+We try to use openly available literature wherever possible. Where that is not possible, scans
+are made available in the [ILIAS course
+space](https://ilias.unibe.ch/ilias.php?baseClass=ilrepositorygui&cmdNode=yv:ng&cmdClass=ilObjCourseGUI&ref_id=3733960)
+for enrolled students, or the text can be obtained through the library platform
+[swisscovery](https://ubbern.swisscovery.slsp.ch/discovery/search?vid=41SLSP_UBE:UBE). We advise
+against using platforms such as [Library
+Genesis](https://en.wikipedia.org/wiki/Library_Genesis), despite the substantive arguments in
+their favour — see @karaganis2018.
+:::
+
+::: {#refs}
+:::

@@ -1,0 +1,66 @@
+---
+title: "How to add your project here"
+subtitle: "A template for student contributions"
+description: "What a submission to this page looks like, and how to add yours."
+author: "Course team"
+date: 2026-09-15
+date-modified: last-modified
+lang: en-GB
+categories: [template]
+---
+
+This page is a placeholder and a template. It is replaced by real student projects during the
+semester.
+
+## What goes on this page
+
+Once you have finished your [assignment](/contents/assignment.qmd) — a bibliography in Zotero,
+published as a website, with an *About* page documenting your workflow — you can have it listed
+here. Listing is voluntary and needs your explicit consent.
+
+## How to add your project
+
+Either send us the link, or do it yourself, which is better practice:
+
+1.  Fork [this repository](https://github.com/DHBern/introduction-to-dh/).
+2.  Add a file `contents/posts/YYYYMMDD-topic-yourname.qmd`.
+3.  Copy the front matter below and fill it in.
+4.  Open a pull request.
+
+``` yaml
+---
+title: "Your project title"
+subtitle: "One line saying what it covers"
+description: "Two or three sentences for the card on the overview page."
+author: "Your Name"
+date: 2026-12-01
+lang: en-GB   # or de-CH
+categories: [history, networks]   # your topic and methods
+---
+```
+
+Then write a short text — half a page is enough — covering:
+
+-   **The topic** and why you chose it
+-   **The bibliography**: how many items, how you bounded the topic, how you structured it
+-   **The workflow**: which tools, which steps, what broke
+-   **A link to your site**
+
+## Example
+
+> ### Networks of Bernese printers, 1750–1800
+>
+> A bibliography of 47 items on early modern print culture in the Swiss Confederation,
+> structured by three debates: the economics of the trade, censorship, and the circulation of
+> texts. Built in Zotero, exported as BibTeX, rendered with Quarto and published on GitHub
+> Pages. The co-authorship network was produced in Gephi Lite from the Wikidata query written in
+> Session 5.
+>
+> → **[View the project](https://example.github.io/bernese-printers/)**
+
+## Licensing and consent
+
+Adding your project here means publishing it under the site's
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) licence. Only include material
+you have the right to publish. If you change your mind later, open an issue and we will remove
+the entry.

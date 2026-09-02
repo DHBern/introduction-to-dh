@@ -1,0 +1,77 @@
+---
+title: "Session 2"
+subtitle: "What is DH? · What is data? · Zotero"
+author:
+  - name: Tobias Hodel
+    orcid: 0000-0002-2071-6407
+    email: tobias.hodel@unibe.ch
+    affiliations:
+      - Walter Benjamin Kolleg / Digital Humanities, University of Bern
+    role: author
+date: 2026-09-22
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-hodel}
+[Hodel]{.teach .teach-hodel} Taught by **Tobias Hodel**.
+:::
+
+## In this session
+
+-   **Discussion of Sahle** — what is at stake in the claim that DH does not exist
+-   **What is data?** A first approach, worked out with an LLM agent
+-   **Zotero introduction** (approx. 20 minutes), including the plugin
+-   Documenting a first bibliographic reference
+
+## Discussion: Sahle
+
+We take [@sahle2015] apart together. Points to have ready:
+
+-   Which of Sahle's positions do you recognise from your own field?
+-   Is "DH" a discipline, a method, a set of tools, or a funding category?
+-   What would be lost if the term disappeared tomorrow?
+
+## Exercise: what is data, what is information?
+
+Working with an LLM agent, in pairs:
+
+1.  Ask the model to define *data* and *information*, and to distinguish them.
+2.  Push it: give it a concrete humanities object — a charter, a photograph, a novel, a
+    ceramic sherd — and ask what the data is. Where does the data stop and the interpretation
+    start?
+3.  Ask it for bibliographic references on the distinction. **Then check every one of them.**
+
+### Reflection: the limits of LLMs and prompting strategies
+
+We compare results across the room:
+
+-   Which answers were the same across groups, and which diverged? Why?
+-   How many of the references were real? How many were plausible inventions?
+-   What did a better prompt actually change — the substance, or only the register?
+-   When is an LLM a reasonable first step in a research workflow, and when is it a liability?
+
+## Zotero introduction
+
+A short, practical run-through:
+
+-   Libraries, collections, tags, and saved searches
+-   The browser connector, and what it does and does not capture
+-   Attachments, notes, and where the files actually live
+-   Plugins — installation and what they are good for
+-   **Documenting a bibliographic reference properly**: what a clean record looks like, and why
+    it matters for everything we do later
+
+Everything you collect here feeds directly into your
+[assignment](/contents/assignment.qmd).
+
+## Reading for Session 3
+
+-   Schöch, Christof. 2013. "Big? Smart? Clean? Messy? Data in the Humanities." *Journal of
+    Digital Humanities* 2 (3).
+-   Pomerantz, Jeffrey. 2015. *Metadata*. The MIT Press. **Introduction and chapter 1.**
+
+## Task
+
+Sign up for **[GitHub](https://github.com/)**. Use a username you are willing to be associated
+with professionally.

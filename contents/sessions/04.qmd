@@ -1,0 +1,89 @@
+---
+title: "Session 4"
+subtitle: "Data structures"
+author:
+  - name: Francesco Beretta
+    orcid: 0000-0002-4389-4126
+    role: author
+date: 2026-10-06
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-beretta}
+[Beretta]{.teach .teach-beretta} Taught by **Francesco Beretta**.
+:::
+
+## In this session
+
+-   **Conceptual modelling**: what a data model is, before any database exists
+-   A showcase of **relational** and **graph** structures
+-   Two modelling exercises
+-   Reflection on domains and disciplinary diversity
+-   **Dublin Core** and **METS**
+
+## Conceptual modelling
+
+Following [@flanders2018]: a data model is an argument about what exists in your material and
+how it relates. It is made before the technology and it constrains everything afterwards.
+
+-   Entities, attributes, relations
+-   What a model asserts, and what it makes unsayable
+-   Why the first model is always wrong, and why that is fine
+
+### Showcase: relational and graph
+
+Two ways of holding the same material, side by side:
+
+-   **Relational** — tables, keys, joins; strong on constraints and counting
+-   **Graph** — nodes and edges; strong on connection and traversal
+
+We are not choosing a winner. We are looking at what each makes easy and what each makes hard.
+
+## Exercise 1: articles and authors
+
+Build a data model for **articles and their authors** — the material from your own Zotero
+library.
+
+-   What is an author? A string? A person? A person with an identifier?
+-   What happens to co-authorship, to editors, to institutional authors, to pseudonyms?
+-   Where does a journal sit in the model — attribute or entity?
+
+Draw it. Paper is fine; the Lab introduces [draw.io](https://app.diagrams.net/) and
+[QuickDBD](https://app.quickdatabasediagrams.com/) the same week.
+
+## Exercise 2: artwork
+
+Now model a **work of art** — an object with a maker, a material, a date, a location, and a
+history of all of those.
+
+-   How do you model a date that is "around 1480"?
+-   How do you model an attribution that changed in 1962?
+-   Where does the object end and the record about it begin?
+
+## Reflection: diversity of domains in the humanities
+
+Different disciplines model different things, and the differences are not superficial:
+
+-   **Prosopography** — people, roles, relations, uncertain identity across sources
+-   **Materiality** — objects, substances, condition, provenance, physical description
+
+Bring your own field into this. What does your material insist on that the models above cannot
+express?
+
+## Standards: Dublin Core and METS
+
+-   **[Dublin Core](https://www.dublincore.org/)** — fifteen elements, deliberately minimal;
+    what that minimalism buys and what it costs
+-   **[METS](https://www.loc.gov/standards/mets/)** — structural metadata for complex digital
+    objects; describing not the content but its arrangement
+
+::: {.callout-tip title="In parallel in the Lab"}
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/04.html) turns this into
+practice: replacing Excel with SQLite.
+:::
+
+## Reading for Session 5
+
+Beretta, Francesco. 2024. "Conceptualising Information Production in the Context of the SDHSS
+Ontology Ecosystem." *Methodos. Savoirs et Textes* 24. <https://doi.org/10.4000/12xqn>

@@ -1,0 +1,58 @@
+---
+title: "Session 10"
+subtitle: "Data analysis: geovisualisation"
+author:
+  - name: Tobias Hodel
+    orcid: 0000-0002-2071-6407
+    email: tobias.hodel@unibe.ch
+    affiliations:
+      - Walter Benjamin Kolleg / Digital Humanities, University of Bern
+    role: author
+date: 2026-11-17
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-hodel}
+[Hodel]{.teach .teach-hodel} Taught by **Tobias Hodel**.
+:::
+
+## In this session
+
+-   Space and place in humanities data
+-   **Hands-on** with the [DARIAH Geo-Browser](https://geobrowser.de.dariah.eu/) and
+    [Palladio](https://hdlab.stanford.edu/palladio/)
+
+## Mapping humanities data
+
+-   The gap between a **place** and a **coordinate**, and everything that falls into it
+-   Geocoding and gazetteers: [GeoNames](https://www.geonames.org/),
+    [Wikidata](https://www.wikidata.org/), [Pleiades](https://pleiades.stoa.org/)
+-   Historical geography: borders move, names change, places disappear
+-   The base map is an argument. A modern map under early modern data is a claim.
+-   Time plus space: how to show change without implying a smooth process
+
+## Hands-on
+
+Working from your Wikidata CSV ([Session 5](/contents/sessions/05.qmd)) or from any other
+place-bearing dataset:
+
+1.  **DARIAH Geo-Browser** — georeferencing a table, and animating it over time
+2.  **Palladio** — map, graph, gallery and table views over the same data; the point is the
+    switching between them
+3.  Deliberately break something: map an ambiguous place name and see where it lands
+
+### Reflection
+
+-   Which of your points are wrong, and how would a reader ever know?
+-   What does the visualisation make it *impossible* to say?
+
+::: {.callout-tip title="In parallel in the Lab"}
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/10.html) does data cleaning and
+reconciliation with OpenRefine — the tool that fixes exactly the place-name problems this
+session exposes.
+:::
+
+## Reading for Session 11
+
+An introduction to machine learning (to be announced).
