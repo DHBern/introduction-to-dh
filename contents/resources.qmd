@@ -46,6 +46,11 @@ listing:
       description: "Georeferencing and animating tabular data over historical time. Used in Session 10."
       date: 2026-11-17
       categories: [tool]
+    - title: "TLCMap"
+      path: https://tlcmap.org/
+      description: "Time Layered Cultural Map — a workbench that holds a spatial dataset and its visualisations together. Layer 2246 carries the data behind the Craig case study read for Session 10."
+      date: 2026-11-17
+      categories: [tool]
     - title: "Dublin Core Metadata Initiative"
       path: https://www.dublincore.org/
       description: "The fifteen-element metadata standard, plus the extended DCMI terms. Introduced in Session 4."

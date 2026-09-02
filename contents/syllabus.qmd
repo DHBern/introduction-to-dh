@@ -143,7 +143,9 @@ Omeka](https://dhbern.github.io/dh-lab/contents/sessions/08.html)
 
 Reading for next week:
 
--   To be announced
+-   [@craig2025] — open access; read it as a complete workflow. The TEI source texts
+    [@craig2024] and the [map and data](https://tlcmap.org/layers/2246) are both published, so
+    every stage can be inspected.
 
 DH Lab in parallel: [Introduction to Colab /
 Noto](https://dhbern.github.io/dh-lab/contents/sessions/09.html)

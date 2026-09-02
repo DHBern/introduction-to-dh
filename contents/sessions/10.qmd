@@ -32,6 +32,40 @@ lang: en-GB
 -   The base map is an argument. A modern map under early modern data is a claim.
 -   Time plus space: how to show change without implying a smooth process
 
+## Case study: the geography of tragedy
+
+We work through [@craig2025] together, because it is a rare example of a geospatial humanities
+project that publishes **every stage** of its workflow — and so lets us see the decisions that a
+finished map normally hides.
+
+### The chain, end to end
+
+| Stage | Where it lives |
+|:--|:--|
+| Source texts, TEI-encoded, with the printed editions they derive from | [Zenodo dataset](https://doi.org/10.5281/zenodo.14504814) |
+| Place allusions extracted, georeferenced, mapped | [TLCMap layer 2246](https://tlcmap.org/layers/2246) |
+| The argument | [DSH article](https://doi.org/10.1093/llc/fqaf055), open access |
+
+This is the course in miniature: [encoding](/contents/sessions/07.qmd) →
+[modelling](/contents/sessions/04.qmd) → analysis → publication. Open all three side by side.
+
+### What to look at
+
+-   **In the TEI**: how is a place allusion marked up, and what does the encoding decide that the
+    map then inherits? An allusion to "Rome" in a play is not a coordinate until somebody makes
+    it one.
+-   **In TLCMap**: the workbench holds the data *and* the visualisation. Switch between the map
+    and the underlying table. Which points would you challenge?
+-   **In the article**: how does Craig move from a distribution of dots to a claim about
+    Shakespeare? Where is the inference, and is it carried by the map or by the reading?
+
+### The awkward questions
+
+-   Every place in the sample is a place *named in dialogue*. What geography does that method
+    make invisible?
+-   The plays are early modern; the base map is not. What does that mismatch do to the argument?
+-   Eleven Shakespeare plays against eleven randomly selected others: is that a control group?
+
 ## Hands-on
 
 Working from your Wikidata CSV ([Session 5](/contents/sessions/05.qmd)) or from any other

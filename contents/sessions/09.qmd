@@ -60,4 +60,25 @@ analysis into notebooks (Colab / Noto) with topic modelling.
 
 ## Reading for Session 10
 
-To be announced.
+Craig, Hugh. 2025. "The geography of tragedy: mapping allusions to places in a set of
+Shakespearean plays." *Digital Scholarship in the Humanities* 40 (3): 747–761.
+<https://doi.org/10.1093/llc/fqaf055> (open access, CC BY 4.0)
+
+Craig collects every allusion to a place in the dialogue of twenty-two early modern English
+tragedies — eleven by Shakespeare, eleven not — and maps them to look for patterns across the
+set, by author, and play by play.
+
+Read it as a **complete workflow**, not only as an argument about Shakespeare. The whole chain
+is published and you can inspect every link of it:
+
+-   the **TEI-encoded source texts**, with a metadata file recording which early printed editions
+    they derive from — <https://doi.org/10.5281/zenodo.14504814>
+-   the **map and the data behind it**, in the TLCMap workbench —
+    <https://tlcmap.org/layers/2246>
+
+Questions to bring:
+
+-   What counts as "a place" in this study, and who decided?
+-   What did the TEI encoding have to settle before any mapping was possible?
+-   The article finds the densest concentration of place names in the eastern Mediterranean. Is
+    that a finding about the plays, or about the sample?
