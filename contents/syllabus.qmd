@@ -11,7 +11,7 @@ csl: chicago-fullnote-syllabus.csl
 ---
 
 
-Fourteen sessions, Tuesdays 10:00–12:00, Unitobler F-112.
+Fourteen sessions, Tuesdays 10:15–12:00, Unitobler F-112.
 
 ::: {.callout-important title="How the readings work"}
 The reading listed under a session is the reading **you prepare for the following week**. It is
@@ -76,7 +76,7 @@ storage](https://dhbern.github.io/dh-lab/contents/sessions/02.html)
 
 Reading for next week:
 
--   [@flanders2018]
+-   [@flanders2018] — scan in [ILIAS](https://ilias.unibe.ch/ilias.php?baseClass=ilrepositorygui&cmdNode=yv:ng&cmdClass=ilObjCourseGUI&ref_id=3733960)
 
 DH Lab in parallel: [Markdown, Obsidian, GitHub,
 VSCodium](https://dhbern.github.io/dh-lab/contents/sessions/03.html)

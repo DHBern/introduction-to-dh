@@ -68,7 +68,7 @@ Everything you collect here feeds directly into your
 ## Reading for Session 3
 
 -   Schöch, Christof. 2013. "Big? Smart? Clean? Messy? Data in the Humanities." *Journal of
-    Digital Humanities* 2 (3).
+    Digital Humanities* 2 (3). <https://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities/>
 -   Pomerantz, Jeffrey. 2015. *Metadata*. The MIT Press. **Introduction and chapter 1.**
 
 ## Task

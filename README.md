@@ -10,7 +10,7 @@ Co-taught by Tobias Hodel, Elena Spadini and Francesco Beretta.
 |                      |                                                                                                                          |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | Semester             | Autumn Semester 2026 (HS 2026)                                                                                           |
-| Time                 | Tuesdays, 10:00–12:00                                                                                                    |
+| Time                 | Tuesdays, 10:15–12:00                                                                                                    |
 | Room                 | Unitobler, Lerchenweg 36, F-112                                                                                          |
 | First / last session | 15 September 2026 / 15 December 2026                                                                                     |
 | Companion course     | [DH Lab](https://dhbern.github.io/dh-lab/) ([repo](https://github.com/DHBern/dh-lab))                                    |

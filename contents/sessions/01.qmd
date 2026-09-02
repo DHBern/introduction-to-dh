@@ -47,7 +47,7 @@ The session sketches the field from above before we go into any of it in detail:
 
 ## Practical information
 
--   Tuesdays 10:00–12:00, Unitobler, Lerchenweg 36, F-112
+-   Tuesdays 10:15–12:00, Unitobler, Lerchenweg 36, F-112
 -   Course materials and scans: [ILIAS course
     space](https://ilias.unibe.ch/ilias.php?baseClass=ilrepositorygui&cmdNode=yv:ng&cmdClass=ilObjCourseGUI&ref_id=3733960)
 -   These pages are the syllabus. They change during the semester; the

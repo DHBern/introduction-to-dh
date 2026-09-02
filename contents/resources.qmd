@@ -11,6 +11,11 @@ listing:
       description: "Reference manager. You need an account from week 1. Install the browser connector and the word-processor plugin at the same time."
       date: 2026-09-15
       categories: [tool, essential]
+    - title: "DH UniBe Zotero group"
+      path: https://www.zotero.org/groups/2386895/dh_unibe/
+      description: "Shared Zotero library of the Digital Humanities unit in Bern. Membership is by request — ask to be added and we will approve you."
+      date: 2026-09-15
+      categories: [tool, essential]
     - title: "GitHub"
       path: https://github.com/
       description: "Version control and hosting. You need an account from week 2. Students and staff can apply for the free GitHub Education benefits."

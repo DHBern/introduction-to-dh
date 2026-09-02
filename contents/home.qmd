@@ -30,7 +30,7 @@ license:
 
 # Introduction to Digital Humanities
 
-**Autumn Semester 2026 · Tuesdays 10:00–12:00 · Unitobler, Lerchenweg 36, Room F-112**
+**Autumn Semester 2026 · Tuesdays 10:15–12:00 · Unitobler, Lerchenweg 36, Room F-112**
 
 ::: {.callout-important title="This course has a companion: the DH Lab"}
 *Introduction to Digital Humanities* provides the conceptual half of the programme: what data
@@ -126,7 +126,7 @@ credits are recognised.
 |  |  |
 |--------------------------|----------------------------------------------|
 | **Semester** | Autumn Semester 2026 (HS 2026) |
-| **Time** | Tuesdays, 10:00–12:00 |
+| **Time** | Tuesdays, 10:15–12:00 |
 | **First session** | 15 September 2026 |
 | **Last session** | 15 December 2026 |
 | **Room** | Unitobler, Lerchenweg 36, F-112 |
@@ -150,6 +150,8 @@ You do not need to install anything unusual, but you will need accounts for a sm
 services. Create them in the week they are announced, not the night before:
 
 -   **[Zotero](https://www.zotero.org/)** — reference management (from week 1)
+    -   Join the **[DH UniBe Zotero group](https://www.zotero.org/groups/2386895/dh_unibe/)** — a shared library for the
+        department. Membership is by request: ask to be added and we will approve you.
 -   **[GitHub](https://github.com/)** — version control and web publishing (from week 2)
 -   The DH Lab introduces further tools; see the
     [Lab website](https://dhbern.github.io/dh-lab/).

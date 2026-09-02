@@ -69,3 +69,5 @@ Obsidian, GitHub and VSCodium the same week. If you take both courses, do them i
 
 Flanders, Julia, and Fotis Jannidis. 2018. "Data modeling in a digital humanities context: An
 introduction." In *The Shape of Data in Digital Humanities*. Routledge.
+
+Not openly available — a scan is in the [ILIAS course space](https://ilias.unibe.ch/ilias.php?baseClass=ilrepositorygui&cmdNode=yv:ng&cmdClass=ilObjCourseGUI&ref_id=3733960).
