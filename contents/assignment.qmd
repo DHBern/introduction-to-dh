@@ -1,0 +1,110 @@
+---
+title: "Assignment"
+lang: en-GB
+date: 2026-09-02
+date-modified: last-modified
+---
+
+
+The course is assessed through **one piece of work carried across the semester**: an annotated
+bibliography, built in Zotero, and published as a small website that you make yourself.
+
+The point is not the bibliography as such. The point is that you take one small body of material
+through the whole chain the course describes — collect it, model it, describe it with metadata,
+publish it on the open web, and explain in your own words how and why you did it that way.
+
+## What to hand in
+
+### 1. A bibliography in Zotero
+
+Build a bibliography in [Zotero](https://www.zotero.org/) covering **digital approaches to your
+own field of research** — your major or minor subject, the field of a *Hausarbeit* or *Übung*,
+or whichever discipline brings you to this course. If you do not want to work from your own
+field, take Digital Humanities in general, but then narrow it to a sub-topic: "DH and
+manuscripts", "network analysis in social history", "OCR for non-Latin scripts", and so on. A
+sharp sub-topic is much easier to write well about than a broad survey.
+
+Guidance:
+
+-   Choose a topic **connected to the humanities**. It may come from your field of study or
+    simply from your interests.
+-   Use Zotero from the start, not at the end. Collections, tags and notes are part of the work,
+    and they are what makes the later steps possible.
+-   Keep the metadata clean. You will be asked to look critically at your own records in Session
+    3, and to reuse them as data in Sessions 5, 8 and 9.
+
+### 2. A website about your bibliography
+
+Publish a small website — GitHub Pages is introduced in Session 6 and is the expected route —
+that presents the bibliography and, more importantly, **your reading of it**. It should contain:
+
+-   **Structure.** How you have organised the bibliography, and why that organisation and not
+    another. Sections, categories, a chronology, a set of themes — whatever the material calls
+    for. Make the structure visible to a reader.
+-   **Comments.** Annotations on the entries: what a given text contributes, how it relates to
+    the others, where the debates are. Not every item needs a paragraph, but the site should
+    read as a commented bibliography rather than a list.
+-   **Links to the course.** Point out where your material connects to specific sessions and
+    concepts from the course — data modelling, Linked Open Data, editions, network analysis,
+    machine learning, FAIR/CARE. Link to the [session pages](/contents/syllabus.qmd) directly.
+
+### 3. An *About* page explaining your workflow
+
+A page on the same website that documents **how you worked**:
+
+-   Which tools you used and why (Zotero, plugins, editor, Git, hosting, anything else)
+-   How you got the data out of Zotero and into the site
+-   What you tried that did not work, and what you would do differently
+-   Where you used an LLM or an AI assistant, and for what — this is expected and legitimate, but
+    it must be documented (see below)
+
+The *About* page is where the reflective work happens. Treat it as part of the argument, not as
+an appendix.
+
+## Deadlines
+
+|                        |                                                                       |
+|------------------------|-----------------------------------------------------------------------|
+| Topic chosen           | To be confirmed in class                                              |
+| Draft site online      | To be confirmed in class                                              |
+| Final submission       | To be confirmed in class                                              |
+
+::: {.callout-warning title="Dates still to be fixed"}
+The exact deadlines are agreed in Session 1 and 2 and will be entered here.
+:::
+
+## How the work is assessed
+
+The course is **graded**. Your work is assessed on:
+
+-   **Coherence of the topic** — is the sub-topic well chosen and clearly delimited?
+-   **Quality of the bibliography** — are the sources relevant, are the records clean and
+    complete, is the coverage plausible for the topic?
+-   **Quality of the annotation** — do the comments show that you have read and understood the
+    material, and do they relate the items to each other?
+-   **Structure and presentation** — is the site legible, navigable and honest about what it is?
+-   **Reflection on the workflow** — does the *About* page explain the choices, including the
+    ones that went wrong?
+
+Technical polish is *not* a criterion. A plain, well-organised site beats a decorated one.
+
+## Using LLMs and AI assistants
+
+You may use LLMs and AI assistants for this assignment. In fact Session 2 asks you to. Two
+conditions:
+
+1.  **Document it.** State on the *About* page which tools you used and for which steps.
+2.  **Check it.** You are responsible for every claim and every reference on your site. LLMs
+    invent bibliographic references convincingly and often; verify each one against the actual
+    source.
+
+## Relation to the DH Lab
+
+If you are also taking the [DH Lab](https://dhbern.github.io/dh-lab/), its assignment is
+separate: the Lab asks for a **workflow** (data model, analysis, publication) with a written
+account published on GitHub Pages.
+
+The two are designed to connect. Sharing a topic and sharing data is encouraged, and the Lab
+write-up is required to link its three underpinning texts back to **this** site — so build your
+bibliography with that in mind. The two are nonetheless handed in and **graded separately**. See
+the [Lab assignment](https://dhbern.github.io/dh-lab/contents/assignment.html).

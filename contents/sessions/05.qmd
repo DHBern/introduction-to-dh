@@ -1,0 +1,65 @@
+---
+title: "Session 5"
+subtitle: "Data modelling: Linked Open Data"
+author:
+  - name: Francesco Beretta
+    orcid: 0000-0002-4389-4126
+    role: author
+date: 2026-10-13
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-beretta}
+[Beretta]{.teach .teach-beretta} Taught by **Francesco Beretta**.
+:::
+
+## In this session
+
+-   Introduction to **RDF** and **ontologies**
+-   Discussion of [@beretta2024] and the SDHSS ecosystem
+-   **Hands-on exercise with Wikidata** — producing a CSV you will reuse in Session 8
+
+## Linked Open Data
+
+-   The five stars of open data, and where most humanities data actually stops
+-   **RDF**: everything is a triple — subject, predicate, object
+-   **URIs** as identifiers: why `Q64` is more useful than "Berlin"
+-   **Ontologies** as shared vocabularies, and the cost of agreeing on one
+-   SPARQL, briefly — enough to read a query, not yet to write one
+
+## Discussion: Beretta and information production
+
+Beretta's argument is that modelling should capture not only *what was the case* but *who
+asserted it, when, and on what basis*. Points for discussion:
+
+-   What changes when the source of a statement becomes part of the model?
+-   Why is this particularly acute in historical research?
+-   What does an ontology ecosystem give you that a bespoke model does not?
+
+## Exercise: Wikidata
+
+Working in the [Wikidata Query Service](https://query.wikidata.org/):
+
+1.  **Person → birthplace.** Take a set of people relevant to your topic and retrieve their
+    places of birth.
+2.  **Members → organisation.** Retrieve the members of an organisation, or the affiliations of
+    a group of people.
+3.  **Export.** Produce a **CSV** from the result.
+
+::: {.callout-important title="Keep this CSV"}
+The CSV you produce today is the input for the **network analysis in [Session
+8](/contents/sessions/08.qmd)**. Save it somewhere you will find it again, and put it in your
+project repository.
+:::
+
+::: {.callout-tip title="In parallel in the Lab"}
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/05.html) goes further into
+formal ontologies — RiC-O, LRM and CIDOC-CRM.
+:::
+
+## Reading for Session 6
+
+-   On the history of the web and hypertext (see the
+    [syllabus](/contents/syllabus.qmd))
+-   On digital editions as interfaces (see the [syllabus](/contents/syllabus.qmd))

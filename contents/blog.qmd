@@ -1,0 +1,22 @@
+---
+title: "Student Projects"
+lang: en-GB
+date-modified: last-modified
+listing:
+  contents: posts
+  type: grid
+  sort: "date desc"
+  categories: true
+---
+
+
+Project websites and write-ups produced by participants for the
+[assignment](/contents/assignment.qmd). Published with the authors' consent.
+
+If you would like your project listed here, open a
+[pull request](https://github.com/DHBern/introduction-to-dh/) adding a short entry, or send us
+the link.
+
+::: {.callout-note}
+This page fills up over the semester. It is empty at the start — that is expected.
+:::

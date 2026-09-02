@@ -1,0 +1,63 @@
+---
+title: "Session 11"
+subtitle: "From algorithms to machine learning"
+author:
+  - name: Tobias Hodel
+    orcid: 0000-0002-2071-6407
+    email: tobias.hodel@unibe.ch
+    affiliations:
+      - Walter Benjamin Kolleg / Digital Humanities, University of Bern
+    role: author
+date: 2026-11-24
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-hodel}
+[Hodel]{.teach .teach-hodel} Taught by **Tobias Hodel**.
+:::
+
+## In this session
+
+-   From **algorithm** to **model**: what changes when rules are learned rather than written
+-   A non-mathematical introduction to machine learning
+-   **Bias**: where it enters, and why "removing" it is not a technical operation
+
+## From algorithms to machine learning
+
+-   An algorithm is a procedure someone wrote. A model is a procedure fitted to data.
+-   Supervised, unsupervised, self-supervised — what each needs and what each produces
+-   Training, validation, test: why the split matters and how it gets violated
+-   Features and representations; embeddings as learned features
+-   Overfitting, and the humanities' version of it
+
+## Where bias comes from
+
+Not one place, but a chain — and every link is a decision someone made:
+
+1.  **Problem formulation** — what was turned into a prediction task, and what was not
+2.  **Data collection** — who is in the sample, who is absent, and why
+3.  **Labelling** — who labelled it, under what conditions, to what guidelines
+4.  **Model and objective** — what the loss function rewards
+5.  **Evaluation** — aggregate accuracy hiding failure for a subgroup
+6.  **Deployment** — the gap between the benchmark and the situation
+
+For each link: what would it take to notice the problem, and who is in a position to notice it?
+
+## For the humanities
+
+-   ML applied to historical sources: OCR/HTR, entity recognition, classification, clustering
+-   Ground truth as an editorial decision, not a fact
+-   What error rates mean when your material is heterogeneous by nature
+-   The recurring question: is the model a *tool* for your research, or an *object* of it?
+
+::: {.callout-tip title="In parallel in the Lab"}
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/11.html) puts this to work with
+eScriptorium and handwritten text recognition — where you produce the ground truth yourself.
+:::
+
+## Reading for Session 12
+
+Lang, Sarah, and Elena Suárez Cronauer. 2026. "Beyond Data Feminism. Towards Ethical Data Work
+in the (Digital) Humanities." *Zeitschrift für digitale Geisteswissenschaften*, advance online
+publication, 19 February. <https://doi.org/10.17175/wp_2026>

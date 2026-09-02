@@ -1,0 +1,111 @@
+---
+title: "Resources"
+lang: en-GB
+date: 2026-09-02
+date-modified: last-modified
+listing:
+  id: resources
+  contents:
+    - title: "Zotero"
+      path: https://www.zotero.org/
+      description: "Reference manager. You need an account from week 1. Install the browser connector and the word-processor plugin at the same time."
+      date: 2026-09-15
+      categories: [tool, essential]
+    - title: "GitHub"
+      path: https://github.com/
+      description: "Version control and hosting. You need an account from week 2. Students and staff can apply for the free GitHub Education benefits."
+      date: 2026-09-22
+      categories: [tool, essential]
+    - title: "Wikidata Query Service"
+      path: https://query.wikidata.org/
+      description: "SPARQL endpoint for Wikidata, with a query builder and CSV export. Used in Session 5 to produce the dataset reused in Session 8."
+      date: 2026-10-13
+      categories: [tool]
+    - title: "Gephi Lite"
+      path: https://lite.gephi.org/
+      description: "Network analysis and visualisation in the browser — no installation. Used in Session 8."
+      date: 2026-11-03
+      categories: [tool]
+    - title: "Voyant Tools"
+      path: https://voyant-tools.org/
+      description: "Web-based text analysis: word frequencies, trends, contexts, correlations. Used in Session 9."
+      date: 2026-11-10
+      categories: [tool]
+    - title: "Palladio"
+      path: https://hdlab.stanford.edu/palladio/
+      description: "Map, network, gallery and table views over the same tabular dataset. From the Humanities + Design Lab at Stanford. Used in Session 10."
+      date: 2026-11-17
+      categories: [tool]
+    - title: "DARIAH Geo-Browser"
+      path: https://geobrowser.de.dariah.eu/
+      description: "Georeferencing and animating tabular data over historical time. Used in Session 10."
+      date: 2026-11-17
+      categories: [tool]
+    - title: "Dublin Core Metadata Initiative"
+      path: https://www.dublincore.org/
+      description: "The fifteen-element metadata standard, plus the extended DCMI terms. Introduced in Session 4."
+      date: 2026-10-06
+      categories: [standard]
+    - title: "METS — Metadata Encoding and Transmission Standard"
+      path: https://www.loc.gov/standards/mets/
+      description: "Library of Congress standard for the structural metadata of complex digital objects. Introduced in Session 4."
+      date: 2026-10-06
+      categories: [standard]
+    - title: "TEI Guidelines"
+      path: https://tei-c.org/guidelines/
+      description: "The Text Encoding Initiative Guidelines — the reference work for encoding texts in the humanities. Introduced in Session 7."
+      date: 2026-10-27
+      categories: [standard]
+    - title: "Programming Historian"
+      path: https://programminghistorian.org/
+      description: "Peer-reviewed, beginner-friendly tutorials on digital methods, in English, Spanish, French and Portuguese. The single most useful place to go after this course."
+      date: 2026-09-15
+      categories: [tutorial]
+    - title: "Journal of Digital Humanities"
+      path: http://journalofdigitalhumanities.org/
+      description: "Open-access journal; source of the Weingart and Schöch texts on the syllabus."
+      date: 2026-09-15
+      categories: [journal]
+    - title: "Zeitschrift für digitale Geisteswissenschaften (ZfdG)"
+      path: https://zfdg.de/
+      description: "German-language open-access DH journal; source of the Sahle and Lang/Suárez Cronauer texts on the syllabus."
+      date: 2026-09-15
+      categories: [journal]
+    - title: "swisscovery (UB Bern)"
+      path: https://ubbern.swisscovery.slsp.ch/discovery/search?vid=41SLSP_UBE:UBE
+      description: "The library platform for anything on the syllabus that is not openly available and not in ILIAS."
+      date: 2026-09-15
+      categories: [library]
+    - title: "Digital Humanities at the University of Bern"
+      path: https://www.dh.unibe.ch/
+      description: "The department: people, projects, services and the MA programmes."
+      date: 2026-09-15
+      categories: [bern]
+    - title: "DH Bern on GitHub"
+      path: https://github.com/DHBern
+      description: "Code, data and course sites from the Digital Humanities unit in Bern — including this one."
+      date: 2026-09-15
+      categories: [bern]
+  sort: "date asc"
+  sort-ui: [title, date, categories]
+  filter-ui: [description]
+  type: grid
+  page-size: 36
+format:
+  html:
+    link-external-icon: false
+---
+
+
+Tools, standards and reference works used in the course, roughly in the order they come up. The
+[DH Lab](https://dhbern.github.io/dh-lab/contents/resources.html) has its own, more hands-on
+list.
+
+::: {#resources}
+:::
+
+## Contribute
+
+Found something worth adding? Open an
+[issue](https://github.com/DHBern/introduction-to-dh/issues/new/choose) or a pull request. Links
+suggested by students are credited.

@@ -1,0 +1,62 @@
+---
+title: "Session 13"
+subtitle: "Data feminism"
+author:
+  - name: Tobias Hodel
+    orcid: 0000-0002-2071-6407
+    email: tobias.hodel@unibe.ch
+    affiliations:
+      - Walter Benjamin Kolleg / Digital Humanities, University of Bern
+    role: author
+date: 2026-12-08
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-hodel}
+[Hodel]{.teach .teach-hodel} Taught by **Tobias Hodel**.
+:::
+
+## In this session
+
+-   Discussion of [@bender2021]
+-   **Data feminism** as a framework
+-   **Reviewing the semester from an intersectional perspective**
+
+## Data feminism
+
+Following D'Ignazio and Klein [@dignazio2020] and Lang and Suárez Cronauer [@lang2026]:
+
+-   **Examine power.** Who made this dataset, who benefits from it, who is counted in it?
+-   **Challenge power.** Data work as a site of intervention, not only description.
+-   **Elevate emotion and embodiment.** Against the fiction of the view from nowhere.
+-   **Rethink binaries and hierarchies.** Categories are decisions, and they exclude.
+-   **Embrace pluralism.** Many partial perspectives beat one claimed-universal one.
+-   **Consider context.** Data is never raw; decontextualised data is misleading data.
+-   **Make labour visible.** Whose invisible work made this dataset possible?
+
+## Reviewing the semester
+
+We go back over every session and ask the same set of questions:
+
+| Session | The question |
+|:--|:--|
+| What is DH? | Whose definition of the field prevailed, and who was not in the room? |
+| Data and metadata | What did the standard field list make unsayable? |
+| Data structures | Which categories did your model force, and who did they fit badly? |
+| Linked Open Data | Whose entities have Wikidata identifiers, and whose do not? |
+| Publication | Who can actually read what you published — technically, linguistically, financially? |
+| Editions | Which texts get edited, and which have never been thought worth it? |
+| Networks | Who ends up at the centre of a network, and is that a finding or an artefact of the source? |
+| Text analysis | Whose language is the model, the stopword list and the tokenizer built for? |
+| Geovisualisation | Whose place names are on the base map? |
+| Machine learning | Who labelled the data, and under what conditions? |
+| LLMs | Whose text was scraped, and who pays the environmental cost? |
+
+Bring your own [project](/contents/assignment.qmd) to this. The most useful version of this
+session is the one where you find something uncomfortable in your own work.
+
+::: {.callout-tip title="In parallel in the Lab"}
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/13.html) has workflow
+presentations this week.
+:::

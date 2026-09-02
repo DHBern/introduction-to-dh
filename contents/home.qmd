@@ -1,0 +1,204 @@
+---
+pagetitle: "Introduction to Digital Humanities"
+lang: en-GB
+date: 2026-09-02
+date-modified: last-modified
+authors:
+  - name: Tobias Hodel
+    orcid: 0000-0002-2071-6407
+    email: tobias.hodel@unibe.ch
+    affiliations:
+      - Walter Benjamin Kolleg / Digital Humanities, University of Bern
+    role: author
+  - name: Elena Spadini
+    orcid: 0000-0002-4522-2833
+    role: author
+  - name: Francesco Beretta
+    orcid: 0000-0002-4389-4126
+    role: author
+copyright:
+  holder: Tobias Hodel, Elena Spadini and Francesco Beretta
+  year: 2026
+license:
+  text: >
+    This licence allows others to distribute, remix, adapt and build upon the work, even
+    commercially, as long as the original author is credited and new works based on it are
+    published under identical terms.
+  type: open-access
+  url: https://creativecommons.org/licenses/by-sa/4.0/
+---
+
+# Introduction to Digital Humanities
+
+**Autumn Semester 2026 · Tuesdays 10:00–12:00 · Unitobler, Lerchenweg 36, Room F-112**
+
+::: {.callout-important title="This course has a companion: the DH Lab"}
+*Introduction to Digital Humanities* provides the conceptual half of the programme: what data
+is, how it is modelled, published and analysed, and what that means for humanities research.
+The hands-on half — command line, Git, SQLite, APIs, TEI, OpenRefine, notebooks — happens in
+the **[DH Lab](https://dhbern.github.io/dh-lab/)**, which runs in parallel on the same
+Tuesdays. The two courses share a weekly rhythm: what you meet as a concept in the morning,
+you build in the Lab.
+
+→ [DH Lab website](https://dhbern.github.io/dh-lab/) · [Joint weekly programme](#weekly-programme)
+:::
+
+## What this course is about
+
+Algorithms and computers dominate our everyday lives, and for several years now researchers in
+the humanities have also been using computational power to conduct "experiments" in the digital
+realm with digital or digitized materials. A starting point remains texts and images, which are
+analyzed in large quantitative volumes in order to enable new interpretations. In contrast to
+observations in the natural sciences, the evaluation of these "data" is far less standardized.
+Analytical models and theories (such as stylometry or distant reading) are continually being
+discarded and newly promoted. Moreover, new forms of linking, visualization, and representation
+become possible, which in turn call for interpretation and the development of new narratives.
+
+This course provides an introduction to the Digital Humanities and is designed as a hands-on
+class to help participants develop their own approaches to working with digital materials. It
+also aims to foster a critical awareness of the underlying assumptions in the development of
+digital tools, as well as the media-specific forms of data processing and analysis, placing them
+in a broader societal context. At the same time, the sustainable preparation and handling of
+data and algorithms plays an important role and will be addressed repeatedly throughout the
+course.
+
+::: {.callout-note title="Prerequisites"}
+**No prior programming or technical knowledge is required**; however, a willingness to engage
+with and experiment using datasets, texts, and image collections is expected.
+:::
+
+## How the semester is structured
+
+The course follows the chain from source to published, analysed data end to end:
+
+1.  **What is DH?** Competing definitions of the field, and why the disagreement is productive.
+2.  **What is data?** Forms of data in the humanities, the difference between data and
+    information, and metadata as the layer that makes data findable.
+3.  **Data modelling.** Conceptual modelling, relational and graph structures, domain
+    standards (Dublin Core, METS), and what modelling decisions hide or reveal.
+4.  **Linked Open Data.** RDF, ontologies, and connecting your own data to Wikidata.
+5.  **Data publication.** The web as an interface: HTML, CSS, XML, GitHub Pages — and the
+    scholarly digital edition as a genre.
+6.  **Data analysis.** Networks, text corpora and geovisualisation, each applied to material
+    you produced yourself earlier in the semester.
+7.  **Algorithms, machine learning and LLMs.** How statistical models work, where bias enters,
+    and what "research agents" can and cannot do.
+8.  **Critique and sustainability.** Data feminism, intersectional perspectives, and the FAIR
+    and CARE principles.
+
+A thread runs through the semester: the bibliography you start building in week 2 becomes your
+data model in week 4, your CSV in week 5, your network in week 8, and your text corpus in
+week 9. By the end you will have carried one small dataset through a complete digital research
+workflow — which is exactly what the [assignment](/contents/assignment.qmd) asks you to
+document.
+
+## Learning outcomes
+
+By the end of the course you will be able to:
+
+-   Situate Digital Humanities within the humanities and explain why the field is contested
+-   Distinguish data, information and metadata, and describe humanities material in standard
+    metadata vocabularies
+-   Build a conceptual data model for a humanities research question and justify its choices
+-   Read and produce Linked Open Data, and connect a dataset to authority files such as Wikidata
+-   Publish a small dataset and its documentation on the open web
+-   Apply network analysis, text analysis and geovisualisation to your own data, and judge what
+    those methods can and cannot show
+-   Explain in non-mathematical terms how machine learning and large language models work, and
+    identify where bias is introduced
+-   Assess digital research projects against the FAIR and CARE principles
+
+## Who the course is for
+
+The course is **compulsory** for students in the **MA Major** and **MA Minor Digital
+Humanities** at the University of Bern.
+
+It is also **open to students from other programmes**, in particular History, Near Eastern
+Studies and German Studies, as well as to anyone in the humanities who wants a grounded
+introduction to digital methods. No programming experience is expected, and none is required
+to pass.
+
+If you are enrolled in another programme, please check with your own study coordinator how the
+credits are recognised.
+
+## Organisation
+
+|  |  |
+|--------------------------|----------------------------------------------|
+| **Semester** | Autumn Semester 2026 (HS 2026) |
+| **Time** | Tuesdays, 10:00–12:00 |
+| **First session** | 15 September 2026 |
+| **Last session** | 15 December 2026 |
+| **Room** | Unitobler, Lerchenweg 36, F-112 |
+| **Language** | English (discussion in German is welcome) |
+| **Companion course** | [DH Lab](https://dhbern.github.io/dh-lab/) |
+| **Course materials** | [ILIAS course space](https://ilias.unibe.ch/ilias.php?baseClass=ilrepositorygui&cmdNode=yv:ng&cmdClass=ilObjCourseGUI&ref_id=3733960) |
+| **Assessment** | Project website + about page, see [Assignment](/contents/assignment.qmd) |
+
+::: {.callout-note title="Where the readings are"}
+Bibliographic details for every reading are on the [Syllabus](/contents/syllabus.qmd) page,
+with a link to the open-access version wherever one exists. **Scans of texts that are not
+openly available are provided in
+[ILIAS](https://ilias.unibe.ch/ilias.php?baseClass=ilrepositorygui&cmdNode=yv:ng&cmdClass=ilObjCourseGUI&ref_id=3733960)**
+and are accessible to enrolled students only. If a scan is missing, please open an
+[issue](https://github.com/DHBern/introduction-to-dh/issues/new/choose) or tell us in class.
+:::
+
+## Tools you will sign up for
+
+You do not need to install anything unusual, but you will need accounts for a small number of
+services. Create them in the week they are announced, not the night before:
+
+-   **[Zotero](https://www.zotero.org/)** — reference management (from week 1)
+-   **[GitHub](https://github.com/)** — version control and web publishing (from week 2)
+-   The DH Lab introduces further tools; see the
+    [Lab website](https://dhbern.github.io/dh-lab/).
+
+## Weekly programme {#weekly-programme}
+
+The Intro and the Lab run on the same fourteen Tuesdays. This table shows both, so you can see
+how the concept and the practice line up each week. Follow the links for the full session
+pages.
+
+| \# | Date | Introduction to DH | DH Lab |
+|:---|:-----|:-------------------|:-------|
+| 1 | 15 Sep | [Welcome · What is DH: a bird's-eye view](/contents/sessions/01.qmd) [Course team]{.teach .teach-team} | Programme information, introductions, individual consultations [Course team]{.teach .teach-team} |
+| 2 | 22 Sep | [What is DH? · What is data?](/contents/sessions/02.qmd) [Hodel]{.teach .teach-hodel} | Get to know your computer: CLI, paths, storage [Demleitner]{.teach .teach-demleitner} |
+| 3 | 29 Sep | [What is data? Forms and metadata](/contents/sessions/03.qmd) [Hodel]{.teach .teach-hodel} | Useful stuff: Markdown, Obsidian, GitHub, VSCodium [Hodel]{.teach .teach-hodel} |
+| 4 | 06 Oct | [Data structures](/contents/sessions/04.qmd) [Beretta]{.teach .teach-beretta} | Replacing Excel with SQLite [Beretta]{.teach .teach-beretta} |
+| 5 | 13 Oct | [Data modelling: Linked Open Data](/contents/sessions/05.qmd) [Beretta]{.teach .teach-beretta} | From LOD to RiC-O, LRM and CIDOC-CRM [Hart]{.teach .teach-hart} |
+| 6 | 20 Oct | [Data publication: the web as interface](/contents/sessions/06.qmd) [Hodel]{.teach .teach-hodel} | Introduction to APIs [Hodel]{.teach .teach-hodel} |
+| 7 | 27 Oct | [Data modelling: editions](/contents/sessions/07.qmd) [Spadini]{.teach .teach-spadini} | Scholarly editing as data publication (TEI) [Spadini]{.teach .teach-spadini} |
+| 8 | 03 Nov | [Data analysis: networks](/contents/sessions/08.qmd) [Hodel]{.teach .teach-hodel} | Introduction to Omeka [Hodel]{.teach .teach-hodel} |
+| 9 | 10 Nov | [Data analysis: text corpora](/contents/sessions/09.qmd) [Hodel]{.teach .teach-hodel} | Introduction to Colab / Noto [Hodel]{.teach .teach-hodel} |
+| 10 | 17 Nov | [Data analysis: geovisualisation](/contents/sessions/10.qmd) [Hodel]{.teach .teach-hodel} | Data cleaning: OpenRefine and reconciliation [Demleitner]{.teach .teach-demleitner} |
+| 11 | 24 Nov | [From algorithms to machine learning](/contents/sessions/11.qmd) [Hodel]{.teach .teach-hodel} | Text recognition: eScriptorium [Hodel]{.teach .teach-hodel} |
+| 12 | 01 Dec | [LLMs: stochastic parrots and research agents](/contents/sessions/12.qmd) [Hodel]{.teach .teach-hodel} | GenAI in action: multimodal LLMs [Prada Ziegler]{.teach .teach-prada} |
+| 13 | 08 Dec | [Data feminism](/contents/sessions/13.qmd) [Hodel]{.teach .teach-hodel} | Workflow presentations [Course team]{.teach .teach-team} |
+| 14 | 15 Dec | [FAIR, CARE and digital sustainability](/contents/sessions/14.qmd) [Course team]{.teach .teach-team} | Final-year presentations (Major / Minor) [Course team]{.teach .teach-team} |
+
+::: {.teach-legend}
+[Hodel]{.teach .teach-hodel} Tobias Hodel
+[Spadini]{.teach .teach-spadini} Elena Spadini
+[Beretta]{.teach .teach-beretta} Francesco Beretta
+[Hart]{.teach .teach-hart} Stephen Hart
+[Demleitner]{.teach .teach-demleitner} Adrian Demleitner
+[Prada Ziegler]{.teach .teach-prada} Ismail Prada Ziegler
+[Course team]{.teach .teach-team} all three convenors
+:::
+
+## Assessment
+
+The course is **graded**. It is assessed through a **project website**: a small, publicly hosted
+site built around a bibliography on a topic of your choice, with an *About* page documenting your
+workflow. The full brief, the criteria and the deadlines are on the
+[Assignment](/contents/assignment.qmd) page.
+
+## Contact and imprint
+
+University of Bern\
+Walter Benjamin Kolleg / Digital Humanities\
+Muesmattstrasse 45\
+3012 Bern
+
+[digitalhumanities\@unibe.ch](mailto:digitalhumanities@unibe.ch)

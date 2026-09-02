@@ -1,0 +1,59 @@
+---
+title: "Session 6"
+subtitle: "Data publication: the web as interface"
+author:
+  - name: Tobias Hodel
+    orcid: 0000-0002-2071-6407
+    email: tobias.hodel@unibe.ch
+    affiliations:
+      - Walter Benjamin Kolleg / Digital Humanities, University of Bern
+    role: author
+date: 2026-10-20
+date-modified: last-modified
+lang: en-GB
+---
+
+::: {.session-teacher .st-hodel}
+[Hodel]{.teach .teach-hodel} Taught by **Tobias Hodel**.
+:::
+
+## In this session
+
+-   A very short introduction to **HTML**, **CSS** and **XML**
+-   Web basics: how a page actually reaches a browser
+-   **GitHub Pages introduction** (approx. 45 minutes)
+
+## The web as an interface
+
+Publication is not the last step after the research; it is part of the argument. What a reader
+can see, sort, search and download is a claim about what matters in your data.
+
+## HTML, CSS, XML — the minimum
+
+-   **HTML**: elements, attributes, nesting; structure versus appearance
+-   **CSS**: selectors and rules; why separating the two matters for reuse
+-   **XML**: the same tree model, but for your own vocabulary — the bridge to TEI next week
+-   What "valid" and "well-formed" mean, and why a schema is a data model in disguise
+
+## GitHub Pages
+
+The practical core of the session, and the route to your
+[assignment](/contents/assignment.qmd) website:
+
+-   Publishing a repository as a website
+-   Markdown as source, HTML as output
+-   Static site generators, briefly — what Quarto (this site) or Jekyll do for you
+-   Custom domains, and why you probably do not need one
+-   **Getting your first page online today**
+
+::: {.callout-tip title="In parallel in the Lab"}
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/06.html) covers APIs the same
+week, including the Zotero API — which is one good way to get your bibliography onto the site
+you build here.
+:::
+
+## Reading for Session 7
+
+Sahle, Patrick. 2017. "What Is a Scholarly Digital Edition?" In *Digital Scholarly Editing:
+Theories and Practices*, edited by Matthew James Driscoll and Elena Pierazzo. Open Book
+Publishers. <http://books.openedition.org/obp/3397>

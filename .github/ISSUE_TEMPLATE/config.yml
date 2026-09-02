@@ -1,0 +1,8 @@
+contact_links:
+  - name: Are you looking for documentation on introduction-to-dh?
+    url: https://DHBern.github.io/introduction-to-dh
+    about: Please see the documentation for introduction-to-dh on its GitHub Pages page.
+  - name: Do want to discuss introduction-to-dh with the community?
+    url: https://github.com/DHBern/introduction-to-dh/discussions
+    about: Please see the discussions page for introduction-to-dh.
+blank_issues_enabled: true
