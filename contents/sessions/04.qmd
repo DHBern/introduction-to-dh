@@ -1,6 +1,6 @@
 ---
 title: "Session 4"
-subtitle: "Data structures"
+subtitle: "Data modelling: building information systems for research"
 author:
   - name: Francesco Beretta
     orcid: 0000-0002-4389-4126
@@ -16,74 +16,83 @@ lang: en-GB
 
 ## In this session
 
--   **Conceptual modelling**: what a data model is, before any database exists
--   A showcase of **relational** and **graph** structures
--   Two modelling exercises
--   Reflection on domains and disciplinary diversity
--   **Dublin Core** and **METS**
+- What is a **model** in the context of DH research
+- **Conceptual modelling**: producing a conceptualisation of a domain of interest
+- Choosing data structures: **HTML/XML**, **key-value**, **relational** and **graph** data structures
+- Two exercises
 
 ## Conceptual modelling
 
-Following [@flanders2018]: a data model is an argument about what exists in your material and
-how it relates. It is made before the technology and it constrains everything afterwards.
+What is the point of view of [@flanders2018]: what do the authors state, what do they omit?
 
--   Entities, attributes, relations
--   What a model asserts, and what it makes unsayable
--   Why the first model is always wrong, and why that is fine
+The essence of the ontoing digital transformation is converting available information into digital data using a model.
+This has a huge potential in view of developing new knowledge production methods in HSS. 
 
-### Showcase: relational and graph
+But what is a model?
+In science, a model is defined as a simplified yet equivalent representation of an original phenomenon, highlighting specific characteristics for a particular purpose. Models are used to explain, analyse or predict complex phenomena. 
+Cf. the entry [*Model* in Wikipedia](https://en.wikipedia.org/wiki/Model) and compare the versions in different languages.
 
-Two ways of holding the same material, side by side:
+In humanities, creating a [conceptual model](https://en.wikipedia.org/wiki/Conceptual_model) of a domain of interest is an essential step that provides a clear understanding of the research endeavour and should take place before any choice of methodology and technology used in data producion. 
 
--   **Relational** — tables, keys, joins; strong on constraints and counting
--   **Graph** — nodes and edges; strong on connection and traversal
+Cf. [these slides](https://github.com/Sciences-historiques-numeriques/information-systems/blob/main/slides/Beretta-Conceptual-Modelling-and-Research-Cycle-1-0.pdf) that will be commented during the course.
 
-We are not choosing a winner. We are looking at what each makes easy and what each makes hard.
 
-## Exercise 1: articles and authors
 
-Build a data model for **articles and their authors** — the material from your own Zotero
-library.
+### Data structures kinds: 
 
--   What is an author? A string? A person? A person with an identifier?
--   What happens to co-authorship, to editors, to institutional authors, to pseudonyms?
--   Where does a journal sit in the model — attribute or entity?
+You can implement the conceptual model of a domain of interest using any of these data structures and technologies; each has its own specific advantages and limitations. 
+We will explore the possibilities offered by relational databases, with a particular focus on the SQLite technology.
 
-Draw it. Paper is fine; the Lab introduces [draw.io](https://app.diagrams.net/) and
-[QuickDBD](https://app.quickdatabasediagrams.com/) the same week.
+- HTML / XML / TEI: markup, semantic trees [this will be presented and discussed in sessions 6 and 7]
+- [JSON](https://en.wikipedia.org/wiki/JSON): key-value structure, lists, collections
+  - [NoSQL databases](https://en.wikipedia.org/wiki/NoSQL), e.g. [Apache Cassandra](https://en.wikipedia.org/wiki/Apache_Cassandra)
+- [SQL Databases](https://en.wikipedia.org/wiki/SQL): tables, columns and relations
+  - [PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL), [SQLite](https://en.wikipedia.org/wiki/SQLite)
+- [Graph Databases](https://en.wikipedia.org/wiki/Graph_database): nodes, properties and arcs
+  - Labeled-property graphs: [neo4j](https://neo4j.com/graphgists/test-test/); PostgreSQL with the [Apache AGE extension](https://age.apache.org/overview) and in future  versions implementing directly the [GQL standard](https://en.wikipedia.org/wiki/Graph_Query_Language)
+  - RDF [this will be presented and discussed in session 5]
 
-## Exercise 2: artwork
 
-Now model a **work of art** — an object with a maker, a material, a date, a location, and a
-history of all of those.
+## Exercice 1. Inspect the chinook database: understand the data model, inspect the content
 
--   How do you model a date that is "around 1480"?
--   How do you model an attribution that changed in 1962?
--   Where does the object end and the record about it begin?
+* [Conceptual model](https://github.com/Sciences-historiques-numeriques/information-systems/blob/main/chinook-database/documentation/conceptual_model.png)
+* [Database structure](https://github.com/Sciences-historiques-numeriques/information-systems/blob/main/chinook-database/documentation/logical_model.png)
+* [Examples of queries](https://github.com/Sciences-historiques-numeriques/information-systems/blob/main/chinook-database/SQL_queries/expore_invoices.sql)
+
+You could install the SQLite Viewer extension for [Chrome](https://chromewebstore.google.com/detail/sqlite-viewer/golagekponhmgfoofmlepfobdmhpajia?hl=en) or for [Egde](https://microsoftedge.microsoft.com/addons/detail/sqlite-viewer/maodolcbcnpdjeiklhembjpidlnapghf), or the [SQLite Manager](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager-webext/) extension for Firefox, then dowload the database from the GitHub repo and explore it in your browser.
+
+
 
 ## Reflection: diversity of domains in the humanities
 
-Different disciplines model different things, and the differences are not superficial:
+Different disciplines model different things, you can build conceptual models for any of them, before you choose a methodology or technology:
 
--   **Prosopography** — people, roles, relations, uncertain identity across sources
--   **Materiality** — objects, substances, condition, provenance, physical description
+- **Texts** — corpora, text structure, language, topics, information extraction
+- **Prosopography** — people, roles, relations, uncertain identity across sources
+- **Materiality** — objects, substances, condition, provenance, physical description
 
-Bring your own field into this. What does your material insist on that the models above cannot
-express?
 
-## Standards: Dublin Core and METS
 
--   **[Dublin Core](https://www.dublincore.org/)** — fifteen elements, deliberately minimal;
-    what that minimalism buys and what it costs
--   **[METS](https://www.loc.gov/standards/mets/)** — structural metadata for complex digital
-    objects; describing not the content but its arrangement
+## Exercise 2: Conceptualising some aspects of prosopography
+
+Begin with a research question or type of analysis that you would undertake:
+
+- map the birthplaces of your population and their development over time.
+- analyse teacher-student relationships using social network analysis.
+- analyse networks of organisations through memberships at different times.
+
+How would you model the information needed to create these analyses?
+
+List the information required and sketch a conceptual model on paper.
+
+The Lab introduces [draw.io](https://app.diagrams.net/) (as VSCode extension: Draw.io Integration by Henning Dieterichs), [QuickDBD](https://app.quickdatabasediagrams.com/) and DBeaver the same week.
+
+
 
 ::: {.callout-tip title="In parallel in the Lab"}
-The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/04.html) turns this into
-practice: replacing Excel with SQLite.
+The [DH Lab](https://dhbern.github.io/dh-lab/contents/sessions/04.html) turns this into practice: replacing Excel with SQLite.
 :::
 
 ## Reading for Session 5
 
-Beretta, Francesco. 2024. "Conceptualising Information Production in the Context of the SDHSS
-Ontology Ecosystem." *Methodos. Savoirs et Textes* 24. <https://doi.org/10.4000/12xqn>
+Beretta, Francesco. 2024. "Conceptualising Information Production in the Context of the SDHSS Ontology Ecosystem." *Methodos. Savoirs et Textes* 24. <https://doi.org/10.4000/12xqn>
