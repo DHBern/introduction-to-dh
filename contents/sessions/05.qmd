@@ -16,35 +16,154 @@ lang: en-GB
 
 ## In this session
 
-- Standards and data interoperability:  **Dublin Core** and **METS** to RiC-O, LRM and CIDOC-CRM
-- Introduction to **RDF** and **ontologies**
-- Reflection on domains and disciplinary diversity
-- Discussion of [@beretta2024] and the SDHSS ecosystem
-- **Hands-on exercise with Wikidata** — producing a CSV you will reuse in Session 8
+- Introduction to **RDF**, **'knowledge graphs' and Linked Open Data (LOD)**
+- **Data interoperability**: from **standards** to **ontologies**
+- **SDHSS**: a method and ontology ecosystem for producing, sharing and reusing research data in HSS
+- **Hands-on exercises with ontologies and triplestores** — producing a CSV you will reuse in Session 8
 
-## Linked Open Data
+[**These slides**](https://github.com/Sciences-historiques-numeriques/information-systems/blob/main/slides/Beretta-LOD-for-research.pdf) support today's presentation. The detailed references on this page are intended to support your documentation, but will not be discussed in depth.
 
-- The five stars of open data, and where most humanities data actually stops
-- **RDF**: everything is a triple — subject, predicate, object
-- **URIs** as identifiers: why `Q64` is more useful than "Berlin"
-- **Ontologies** as shared vocabularies, and the cost of agreeing on one
-- SPARQL, briefly — enough to read a query, not yet to write one
+## The RDF framework and its ecosystem of W3C specifications
 
-## Discussion: Beretta and information production
+- The five stars of LOD: <https://5stardata.info/en/>
+- **RDF** ([Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework)): everything is a triple — subject, predicate, object
+  - RDF: serialisations formats-\> xml, N-Triples / N-Quads, ttl
+- **URIs** as identifiers of **resources**, same function as primary keys in relational databases, but their scope is the WWW:
+  - <http://dbpedia.org/resource/Johannes_Kepler> (URI) -\> <https://dbpedia.org/page/Johannes_Kepler>
+- [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web) : a web of RDF graphs (cf. slides)
+- Modeling languages:
+  - [RDFS (RDF Schema)](https://en.wikipedia.org/wiki/RDF_Schema)
+  - [OWL-DL](https://en.wikipedia.org/wiki/Web_Ontology_Language#OWL_DL){target="_blank"} (Web Ontology Language - Description Logic):\
+    "An ontology consists of a set of axioms which place constraints on sets of individuals (called "classes") and the types of relationships permitted between them. These axioms provide semantics by allowing systems to infer additional information based on the data explicitly provided."
+- Query language: [SPARQL](https://en.wikipedia.org/wiki/SPARQL)
+  - The best tutorial is [the W3C Recommentation](http://www.w3.org/TR/rdf-sparql-query/)
+- Schema language: [SHACL Shapes Constraint Language](https://en.wikipedia.org/wiki/SHACL)
 
-Beretta's argument is that modelling should capture not only *what was the case* but *who asserted it, when, and on what basis*. Points for discussion:
+## From Wikipedia to DBpedia, to Wikidata, to research data (Elites Suisses)
 
-- What changes when the source of a statement becomes part of the model?
-- Why is this particularly acute in historical research?
-- What does an ontology ecosystem give you that a bespoke model does not?
+- Wikipedia
 
-## Exercise: Wikidata
+  - Infobox: <https://en.wikipedia.org/wiki/Johannes_Kepler>
+
+    - [Infobox](https://en.wikipedia.org/wiki/Infobox)
+
+    - [HelpInfobox](https://en.wikipedia.org/wiki/Help:Infobox)
+
+- DBpedia
+
+  - <http://dbpedia.org/resource/Johannes_Kepler> (URI from Wikipedia) -\> <https://dbpedia.org/page/Johannes_Kepler> : URI dereferencing to URL: the URI identifies the resource, the URL is the address of the page about the resource
+
+  - [Linked Data Access](https://www.dbpedia.org/resources/linked-data/): URI specification, Content Negotiation, etc.
+
+  - Interface for SPARQL queries: <https://dbpedia.org/sparql> - [Johannes Kepler as subject](https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&qtxt=SELECT%20*%0AWHERE%20%7B%0A%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FJohannes_Kepler%3E%20%3Fp%20%3Fo%0A%7D%0A&format=text%2Fhtml&timeout=30000&signal_void=on&signal_unconnected=on)
+
+- Wikidata
+
+  - <http://www.wikidata.org/entity/Q8963> (URI) -\> <https://www.wikidata.org/wiki/Q8963> (URL)
+
+  - SPARQL query: [Johannes Kepler](https://w.wiki/YYde) as subject; J. [Kepler as object](https://w.wiki/YuZr) .
+
+  - [Wikidata SPARQL tutorial](https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial)
+
+  - [Structure of statements in Wikidata](https://www.wikidata.org/wiki/Help:Statements)
+
+  - Query builder: <https://query.wikidata.org/querybuilder/?uselang=en>
+
+  - QLever: the [new triplestore for Wikidata](https://www.wikidata.org/wiki/Event:Query_Service_Days_2026)\
+    "The Query Service Days 2026 is an online event focusing on the migration of the Wikidata Query Service from Blazegraph to QLever, and supporting the Wikidata community, tool maintainers and data reusers with adapting their queries and tools to the new endpoint"
+
+- Elites Suisses LESSH Project
+
+  - [Original Elites Suisses Project website](https://elitessuisses.unil.ch/indexPersonnes.php)
+
+  - [From tables to Linked Open Data - The LESSH Project](https://elites-suisses.lod4hss.org/documentation/table-to-lod.html)\
+    Transforming a database into a RDF triplestore using the SDHSS ontology ecosystem (see below)
+
+  - [Elites Suisses as a semantic graph](https://elites-suisses.lod4hss.org/)
+
+  - Guy Parmelin (URI) <https://elites-suisses.lod4hss.org/resource/p53925> -\> URI dereferencing on page
+
+  - Guy Parmelin [as triples subject](https://matgui.matdata.eu/#query=SELECT%20*%0AWHERE%20%7B%0A%20%20%3Chttps%3A%2F%2Felites-suisses.lod4hss.org%2Fresource%2Fp53925%3E%20%3Fp%20%3Fo%20.%0A%7D&endpoint=https%3A%2F%2Fopen-gdb.lod4hss.org%2Frepositories%2Fesw&requestMethod=POST&tabTitle=Query&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=Table) in the graph; as [triples object: memberships](https://matgui.matdata.eu/#query=SELECT%20*%0AWHERE%20%7B%0A%20%20%3Fs%20%3Fp%20%3Chttps%3A%2F%2Felites-suisses.lod4hss.org%2Fresource%2Fp53925%3E%20.%0A%7D&endpoint=https%3A%2F%2Fopen-gdb.lod4hss.org%2Frepositories%2Fesw&requestMethod=POST&tabTitle=Query&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=Table)
+
+  - The [Membership class](https://ontome.net/class/442) in the SDHSS ontology ecosystem
+
+- Three data models centred on properties, statements and events.
+
+## Ontologies as artefacts allowing data interoperability through formalised conceptualisations
+
+- [Triangle of reference](https://en.wikipedia.org/wiki/Triangle_of_reference): denotation, connotation -\> **classes** as concepts that cover sets of instances
+
+- [Ontology (information science)](https://en.wikipedia.org/wiki/Ontology_(information_science))
+
+- [Ontology components](https://en.wikipedia.org/wiki/Ontology_components): classes (intension, extension), attributes, relations
+
+### The question of interoperability: share data among different information systems
+
+#### The example of **libraries**:
+
+- [MARC 21 Format for Bibliographic Data](https://www.loc.gov/marc/bibliographic/): a standard with no explicit conceptualisation
+
+- [Dublin Core Elements / Dublin Core Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/): transition from a metadata standard to an ontology
+
+  - [Dublin Core in RDF](https://dublincore.org/specifications/dublin-core/dc-rdf/)
+
+- Library of Congress — "Bibliographic Framework as a Web of Data: Linked Data Model and Supporting Services" (2012): BIBFRAME as an effort to translate MARC 21 into a linked-data model : <https://www.loc.gov/bibframe/>
+
+- The IFLA models (FRBR/FRAD/FRSAD), now LRM as a conceptual foundation for existing bibliographic data:
+
+  - <https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records>
+
+  - <https://en.wikipedia.org/wiki/IFLA_Library_Reference_Model>
+
+  - The [LRM conceptual model](https://repository.ifla.org/items/214c74cb-c075-4428-a138-39f8d06c55aa)(PDF)
+
+  - The ontology: [LRMoo, the CIDOC CRM flavor](https://cidoc-crm.org/lrmoo)
+
+#### Interoperability in the domain of **archives**:
+
+- [Records in Contexts (RiC)](https://en.wikipedia.org/wiki/Records_in_Contexts)
+
+- [Official website with documentation](https://www.ica.org/ica-network/expert-groups/egad/records-in-contexts-ric/):
+
+  - [**Records in Contexts-Conceptual Model**](https://www.ica.org/ica-network/expert-groups/egad/records-in-contexts-conceptual-model/) **(RiC-CM)**. RiC-CM is a high-level conceptual model that focuses on intellectually identifying and describing records, the people that created and use(d) them, and the activities pursued by the people that the records both facilitate and document.
+
+  - [**Records in Contexts-Ontology (RiC-O)**](https://www.ica.org/ica-network/expert-groups/egad/records-in-contexts-ontology/). RiC-O is a specific implementation of RiC-CM formally expressed in the World Wide Web Consortium standard Web Ontology Language (OWL). RiC-O provides the archival community with the ability to make archival description available using the techniques of Linked Open Data (LOD) employing a conceptual vocabulary and structure that is specific to archival description.
+
+#### Interoperability for **museums' data**:
+
+- CIDOC Conceptual Reference Model - [CIDOC CRM](https://cidoc-crm.org/)
+
+- The models family: [CRM Harmonised Ontologies](https://cidoc-crm.org/crm-harmonised-ontologies)
+
+#### Interoperability for **humanities and social sciences research data**:
+
+- [ontome.net](https://ontome.net/) publishing and reusing project data models and ontologies
+
+- [SDHSS (Semantic data for humanities and social sciences)](https://ontome.net/namespace/11) as a method and ecosystem for allowing research data publication and reuse
+
+The challenges and methodologies are described in [@beretta2024]
+
+-------------
+
+## Exercise 1: Analysing the intensions of lrm:Expression and ric:Record
+
+Read and compare the scope notes of both classes and note similarities and differences. Is there a similar class in CIDOC CRM?
+
+- [lrm:F2 Expression](https://ontome.net/class/1275/namespace/423) and the [LRM conceptual model](https://repository.ifla.org/items/214c74cb-c075-4428-a138-39f8d06c55aa)
+
+- [ric:Record](https://ontome.net/class/1674/namespace/292) (Ric-O ontology) and the [Records in Contexts-Conceptual Model](https://www.ica.org/ica-network/expert-groups/egad/records-in-contexts-conceptual-model/)
+
+- [crm:E73 Information Object](https://ontome.net/class/67/namespace/188)
+
+## Exercise 2: Query Wikidata
 
 Working in the [Wikidata Query Service](https://query.wikidata.org/):
 
-1.  **Person → birthplace.** Take a set of people relevant to your topic and retrieve their places of birth.
+1.  **Person → birthplace.** Take a set of people relevant to your topic and retrieve their places of birth with their geocoordinates.
 2.  **Members → organisation.** Retrieve the members of an organisation, or the affiliations of a group of people.
 3.  **Export.** Produce a **CSV** from the result.
+
+Cf. [this document](https://github.com/Sciences-historiques-numeriques/information-systems/blob/main/rdf-triplestores/wikidata/births-memberships.md) for a discussion of this exercise.
 
 ::: {.callout-important title="Keep this CSV"}
 The CSV you produce today is the input for the **network analysis in [Session 8](/contents/sessions/08.qmd)**. Save it somewhere you will find it again, and put it in your project repository.
