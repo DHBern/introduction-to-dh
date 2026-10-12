@@ -168,7 +168,7 @@ pages.
 | 2 | 22 Sep | [What is DH? · What is data?](/contents/sessions/02.qmd) [Hodel]{.teach .teach-hodel} | Get to know your computer: CLI, paths, storage [Demleitner]{.teach .teach-demleitner} |
 | 3 | 29 Sep | [What is data? Forms and metadata](/contents/sessions/03.qmd) [Hodel]{.teach .teach-hodel} | Useful stuff: Markdown, Obsidian, GitHub, VSCodium [Hodel]{.teach .teach-hodel} |
 | 4 | 06 Oct | [Data structures](/contents/sessions/04.qmd) [Beretta]{.teach .teach-beretta} | Replacing Excel with SQLite [Beretta]{.teach .teach-beretta} |
-| 5 | 13 Oct | [Data modelling: Linked Open Data](/contents/sessions/05.qmd) [Beretta]{.teach .teach-beretta} | From LOD to RiC-O, LRM and CIDOC-CRM [Hart]{.teach .teach-hart} |
+| 5 | 13 Oct | [Data modelling: Linked Open Data](/contents/sessions/05.qmd) [Beretta]{.teach .teach-beretta} | Linked Open Data in action [Beretta]{.teach .teach-beretta} |
 | 6 | 20 Oct | [Data publication: the web as interface](/contents/sessions/06.qmd) [Hodel]{.teach .teach-hodel} | Introduction to APIs [Hodel]{.teach .teach-hodel} |
 | 7 | 27 Oct | [Data modelling: editions](/contents/sessions/07.qmd) [Spadini]{.teach .teach-spadini} | Scholarly editing as data publication (TEI) [Spadini]{.teach .teach-spadini} |
 | 8 | 03 Nov | [Data analysis: networks](/contents/sessions/08.qmd) [Hodel]{.teach .teach-hodel} | Introduction to Omeka [Hodel]{.teach .teach-hodel} |
