@@ -83,7 +83,7 @@ DH Lab in parallel: [Replacing Excel with SQLite](https://dhbern.github.io/dh-la
 
 Reading for next week:
 
-- [@berners-lee1992] — on the history of the web and hypertext
+- [@berners-lee1992] — on the history of the web and hypertext · [PDF (W3C)](https://www.w3.org/History/1992/ENRAP/Article_9202.pdf)
 - [@bleier2018] (Introduction) — on digital editions as interfaces
 
 DH Lab in parallel: [Linked Open Data in action: reusing and connecting information](https://dhbern.github.io/dh-lab/contents/sessions/05.html)
